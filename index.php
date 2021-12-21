@@ -49,10 +49,10 @@
             <div class="col-lg-12">
                 <h2>
                     <!-- <span>We Provide the Best Tutors for</span> -->
-                    <a href="centrelogin.php" class="btn btn-warning blink">Centre Login</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning blink">Centre List</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning blink">New Centre Inquery</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning blink">Admission Inquery</a>
+                    <a href="centrelogin.php" class="btn btn-warning blink"><strong>Centre Login</strong></a>
+                    <a href="courses.php?page=courses" class="btn btn-warning blink"><strong>Centre List</strong></a>
+                    <a href="courses.php?page=courses" class="btn btn-warning blink"><strong>New Centre Inquery</strong></a>
+                    <a href="courses.php?page=courses" class="btn btn-warning blink"><strong>Admission Inquery</strong></a>
                     
                 </h2>
             </div>
