@@ -38,9 +38,8 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
             <h3>Find Us</h3><hr class="border-light">
                 <div>
-                   <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14652.074729500657!2d85.2986011!3d23.3513377!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa244addbe8f7e8f2!2sREX+HOME+TUITION!5e0!3m2!1sen!2sin!4v1555477849843!5m2!1sen!2sin" width="100%" height="210" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-                  <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.5146298072973!2d85.34156511451569!3d23.36959288477844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e170890cf92b%3A0x15320c99a0d28e5a!2sSamudra+Complex%2C+Lalpur%2C+Ranchi%2C+Jharkhand+834001!5e0!3m2!1sen!2sin!4v1565603102391!5m2!1sen!2sin" width="100%" height="210" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15280114.312265646!2d73.72997399968843!3d20.771185748183196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1640089166651!5m2!1sen!2sin" width="100%" height="210" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58487.649058874595!2d86.14819427972033!3d23.623044453660754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f423377bbf157f%3A0x7180e6fb1b2df635!2sSHIVANYA%20COMPUTER%20EDUCATION%20.!5e0!3m2!1sen!2sin!4v1640091960508!5m2!1sen!2sin" width="100%" height="210" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
             <div class="clearfix"></div>

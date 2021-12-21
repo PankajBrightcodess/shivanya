@@ -17,8 +17,11 @@
     <!-- Start Slider BODY section -->
     <div id="wowslider-container1">
     <div class="ws_images"><ul>
-            <li><a href="#"><img src="data1/images/New/b1.jpg" alt="b1" title="" id="wows1_0"/></a></li>
-            <li><a href="#"><img src="data1/images/New/ban3.jpg" alt="b2" title="" id="wows1_1"/></a></li>
+            <li><a href="#"><img src="data1/images/New/01.jpg" alt="b1" title="" id="wows1_0"/></a></li>
+            <li><a href="#"><img src="data1/images/New/02.jpg" alt="b2" title="" id="wows1_1"/></a></li>
+            <li><a href="#"><img src="data1/images/New/03.jpg" alt="b2" title="" id="wows1_1"/></a></li>
+            <li><a href="#"><img src="data1/images/New/04.jpg" alt="b2" title="" id="wows1_1"/></a></li>
+            <li><a href="#"><img src="data1/images/New/05.jpg" alt="b2" title="" id="wows1_1"/></a></li>
 
 
         </ul></div>
@@ -33,7 +36,7 @@
     <script type="text/javascript" src="engine1/script.js"></script>
     <!-- End Slider BODY section -->
 </section>
-<section class="news-scroll">
+<section class="news-scroll" >
     <div class="container">
         <div class="row">
             <div class="col-6 col-sm-6 col-md-6 col-lg-4 pr-0"><h4>New Batch Start From  :</h4></div>
@@ -43,7 +46,7 @@
         </div>
     </div>
 </section>
-<section class="banner-bottom">
+<section class="banner-bottom" >
 	<div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
