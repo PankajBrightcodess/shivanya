@@ -37,7 +37,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6 col-sm-6 col-md-6 col-lg-4 pr-0"><h4>New Batch Start From  :</h4></div>
-            <div class="col-5 col-sm-5 col-md-5  col-lg-4 pl-0"><marquee behavior="scroll" direction="left" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">1st january 2021</marquee></div>
+            <div class="col-5 col-sm-5 col-md-5  col-lg-4 pl-0"><marquee behavior="scroll" direction="left" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">1st january 2022</marquee></div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 mob-btn"><a href="" target="_blank" class="btn btn-success"><i class="fas fa-download"></i> Download Corner</a></div>
         </div>
