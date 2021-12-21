@@ -38,7 +38,7 @@
                 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                      <li class="nav-item <?php if($page=="home"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Home <span class="sr-only">(current)</span></a></li>                                                                <!-- about-us.php -->
+                      <li class="nav-item <?php if($page=="home"){ echo 'active';} ?>"><a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a></li>                                                                <!-- about-us.php -->
                       <li class="nav-item <?php if($page=="about-us"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">About Us</a></li>                                                                                                       <!-- courses.php?page=courses -->
                       <li class="nav-item <?php if($page=="courses"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Courses</a></li>
                       <!-- results.php?page=results -->
