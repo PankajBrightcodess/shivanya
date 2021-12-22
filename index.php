@@ -19,9 +19,10 @@
     <div class="ws_images"><ul>
             <li><a href="#"><img src="data1/images/New/01.jpg" alt="b1" title="" id="wows1_0"/></a></li>
             <li><a href="#"><img src="data1/images/New/02.jpg" alt="b2" title="" id="wows1_1"/></a></li>
-            <li><a href="#"><img src="data1/images/New/03.jpg" alt="b2" title="" id="wows1_1"/></a></li>
-            <li><a href="#"><img src="data1/images/New/04.jpg" alt="b2" title="" id="wows1_1"/></a></li>
-            <li><a href="#"><img src="data1/images/New/05.jpg" alt="b2" title="" id="wows1_1"/></a></li>
+            <li><a href="#"><img src="data1/images/New/03.jpg" alt="b2" title="" id="wows1_2"/></a></li>
+            <li><a href="#"><img src="data1/images/New/04.jpg" alt="b2" title="" id="wows1_3"/></a></li>
+            <li><a href="#"><img src="data1/images/New/05.jpg" alt="b2" title="" id="wows1_4"/></a></li>
+            <li><a href="#"><img src="data1/images/New/06.jpg" alt="b2" title="" id="wows1_5"/></a></li>
 
 
         </ul></div>
@@ -54,8 +55,8 @@
                     <!-- <span>We Provide the Best Tutors for</span> -->
                     <a href="centrelogin.php" class="btn btn-warning blink"><strong>Centre Login</strong></a>
                     <a href="courses.php?page=courses" class="btn btn-warning blink"><strong>Centre List</strong></a>
-                    <a href="courses.php?page=courses" class="btn btn-warning blink"><strong>New Centre Inquery</strong></a>
-                    <a href="courses.php?page=courses" class="btn btn-warning blink"><strong>Admission Inquery</strong></a>
+                    <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink"><strong>New Centre Inquery</strong></a>
+                    <a href="enqueryform.php" class="btn btn-warning blink"><strong>Admission Inquery</strong></a>
                     
                 </h2>
             </div>

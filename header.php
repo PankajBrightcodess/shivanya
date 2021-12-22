@@ -39,14 +39,14 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item <?php if($page=="home"){ echo 'active';} ?>"><a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a></li>                                                                <!-- about-us.php -->
-                      <li class="nav-item <?php if($page=="about-us"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">About Us</a></li>                                                                                                       <!-- courses.php?page=courses -->
-                      <li class="nav-item <?php if($page=="courses"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Courses</a></li>
+                      <li class="nav-item <?php if($page=="about-us"){ echo 'active';} ?>"><a class="nav-link" href="about-us.php?page=about-us">About Us</a></li>                                                                                                       <!-- courses.php?page=courses -->
+                      <li class="nav-item <?php if($page=="courses"){ echo 'active';} ?>"><a class="nav-link" href="courses.php?page=courses">Courses</a></li>
                       <!-- results.php?page=results -->
                       <li class="nav-item <?php if($page=="results"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Results</a></li>
                       <!-- facility.php?page=facility -->
-                     <li class="nav-item <?php if($page=="facility"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Facilities</a></li>
+                     <li class="nav-item <?php if($page=="facility"){ echo 'active';} ?>"><a class="nav-link" href="facility.php?page=facility">Facilities</a></li>
                      <!-- gallery.php?page=gallery -->
-                      <li class="nav-item <?php if($page=="gallery"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Gallery</a></li>
+                      <li class="nav-item <?php if($page=="gallery"){ echo 'active';} ?>"><a class="nav-link" href="gallery.php?page=gallery">Gallery</a></li>
                       <!-- contact-us.php?page=contact-us -->
                       <li class="nav-item <?php if($page=="contact-us"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Contact Us</a></li>
                     </ul>

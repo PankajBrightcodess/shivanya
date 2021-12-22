@@ -332,6 +332,9 @@ footer .social .img-thumbnail{
 	text-align:left;
 	color:#67161a;
 }
+.pages h5{
+    color: #AD2F09;
+}
 .pages ul{
 	text-align:left;
 	list-style:none;
@@ -345,6 +348,28 @@ footer .social .img-thumbnail{
     margin-bottom: 10px;
     padding: 15px;
 }
+.pages .course a{
+    text-decoration: none; 
+    color: white;
+}
+.modal-header{
+    background: #E3D392;
+}
+.modal-title{
+    color: #67161a;
+}
+.modal-body span{
+  color: #67161a;
+}
+.modal-body .part p{
+  color: #204E5E;
+}
+.enqueryform{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 9px #78462E;
+}
 #courses{
 	padding:80px 0;
 }
@@ -357,6 +382,7 @@ footer .social .img-thumbnail{
 	max-width:150px;
 	border-radius:50%;
 }
+
 #faculty p{
 	margin:0;
     text-align: center;
