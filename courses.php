@@ -21,47 +21,47 @@
                 </div>
                 <div class="col-lg-6">
                    <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal1">Diploma in Nursery teacher training Course (DNITC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal1">Diploma in Nursery teacher training Course (DNITC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal2">Diploma in Computer Teacher Training Course (DCITC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal2">Diploma in Computer Teacher Training Course (DCITC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal3">PG-Diploma in Computer Course (PG-DCC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal3">PG-Diploma in Computer Course (PG-DCC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal4">Marter Diploma in Computer Course (MDCC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal4">Marter Diploma in Computer Course (MDCC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal5">Advance Diploma in Computer Programming Course (ADCPC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal5">Advance Diploma in Computer Programming Course (ADCPC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li style="font-size: 14px;"><a href="" data-toggle="modal" data-target="#exampleModal6">Diploma in Computer Office Management & Publishing Course (DCOMPC)</a></li>       
+                        <li style="font-size: 14px;"><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal6">Diploma in Computer Office Management & Publishing Course (DCOMPC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal7">Advance Diploma in Computer Course (ADCC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal7">Advance Diploma in Computer Course (ADCC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal8">Diploma in Computer Office & Accounting Course (DCOAC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal8">Diploma in Computer Office & Accounting Course (DCOAC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6 mb-3">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal9">Master Certificate in Computer Course (MCCC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal9">Master Certificate in Computer Course (MCCC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-md-12">
@@ -69,27 +69,27 @@
                 </div>
                  <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal10">Diploma in Computer Financial Accounting Course (DCFAC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal10">Diploma in Computer Financial Accounting Course (DCFAC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal11">Diploma in Desktop Publishing Course (DDTPC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal11">Diploma in Desktop Publishing Course (DDTPC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal12">Diploma in Web Designing Course (DWDC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal12">Diploma in Web Designing Course (DWDC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal13">Diploma in Computer Course (DCC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal13">Diploma in Computer Course (DCC)</a></li>       
                     </ul>
                 </div>
                  <div class="col-lg-6 mb-3">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal14">Certificate in Computer Course (CCC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal14">Certificate in Computer Course (CCC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-md-12">
@@ -97,12 +97,12 @@
                 </div>
                  <div class="col-lg-6">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal15">Certificate in Basic Computer Course (CBCC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal15">Certificate in Basic Computer Course (CBCC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6 mb-3">
                     <ul>
-                        <li><a href="" data-toggle="modal" data-target="#exampleModal16">Certificate in Computer Financial Accounting Course (CCFAC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal16">Certificate in Computer Financial Accounting Course (CCFAC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-md-12">

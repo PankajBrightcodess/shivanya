@@ -253,7 +253,15 @@ color:#D70104;
 .all-center{
     margin: 50px auto;
     max-width: 500px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
 }
+.all-center h2{
+   font-size: 40px;
+   color: #7A1759;
+}
+
 
 
 

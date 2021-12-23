@@ -54,9 +54,9 @@
                 <h2>
                     <!-- <span>We Provide the Best Tutors for</span> -->
                     <a href="centrelogin.php" class="btn btn-warning blink"><strong>Centre Login</strong></a>
-                    <a href="courses.php?page=courses" class="btn btn-warning blink"><strong>Centre List</strong></a>
+                    <a href="centerlist.php" class="btn btn-warning blink"><strong>Centre List</strong></a>
                     <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink"><strong>New Centre Inquery</strong></a>
-                    <a href="enqueryform.php" class="btn btn-warning blink"><strong>Admission Inquery</strong></a>
+                    <a href="results.php" class="btn btn-warning blink"><strong>Results</strong></a>
                     
                 </h2>
             </div>

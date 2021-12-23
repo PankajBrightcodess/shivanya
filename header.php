@@ -25,7 +25,7 @@
     </div>
   </section>
   <section class="logo-nav">
-  	<div class="container">
+  	<div class="container-fluid">
     	<div class="row">
         	<div class="col-12 col-sm-12 col-md-3 col-lg-4">
             	<div class="logo-title"><a class="navbar-brand" href="index.php"><img src="images/logo/logo.jpeg" height="110" width="150" alt="logo"></a></div>
@@ -42,13 +42,14 @@
                       <li class="nav-item <?php if($page=="about-us"){ echo 'active';} ?>"><a class="nav-link" href="about-us.php?page=about-us">About Us</a></li>                                                                                                       <!-- courses.php?page=courses -->
                       <li class="nav-item <?php if($page=="courses"){ echo 'active';} ?>"><a class="nav-link" href="courses.php?page=courses">Courses</a></li>
                       <!-- results.php?page=results -->
-                      <li class="nav-item <?php if($page=="results"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Results</a></li>
+                      <!-- <li class="nav-item <?php if($page=="results"){ echo 'active';} ?>"><a class="nav-link" href="results.php?page=results">Results</a></li> -->
                       <!-- facility.php?page=facility -->
                      <li class="nav-item <?php if($page=="facility"){ echo 'active';} ?>"><a class="nav-link" href="facility.php?page=facility">Facilities</a></li>
                      <!-- gallery.php?page=gallery -->
-                      <li class="nav-item <?php if($page=="gallery"){ echo 'active';} ?>"><a class="nav-link" href="gallery.php?page=gallery">Gallery</a></li>
+                      <li class="nav-item <?php if($page=="certificate"){ echo 'active';} ?>"><a class="nav-link" href="certificate.php?page=certificate">Certificate</a></li>
                       <!-- contact-us.php?page=contact-us -->
                       <li class="nav-item <?php if($page=="contact-us"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Contact Us</a></li>
+                      <li class="nav-item "><h2><a href="enqueryform.php" class="btn btn-warning blink"><strong>Admission Now</strong></a></h2></li>
                     </ul>
                   </div>
                 </nav>
