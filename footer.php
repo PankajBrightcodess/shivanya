@@ -24,7 +24,7 @@
                 <h3>Stay Connected</h3><hr class="border-light">
                 <p>Shivanya Computer Education Pvt.Ltd.</p>
                 <p>An ISO 9001:2015 Certified institute</p>
-                <p>Ranchi – 0000000 (Jharkhand)</p>
+                <p>Ranchi – 827013 (Jharkhand)</p>
                 <p><span>Mobile No. :</span><a href="tel:09852528104"  title="09852528104"> (+91) - 9852528104</a></p>
                 <p><span>Email : </span><a href="">shivanyacomputereducation@gmail.com</a></p>
                 <div class="social">

@@ -48,7 +48,7 @@
                      <!-- gallery.php?page=gallery -->
                       <li class="nav-item <?php if($page=="certificate"){ echo 'active';} ?>"><a class="nav-link" href="certificate.php?page=certificate">Certificate</a></li>
                       <!-- contact-us.php?page=contact-us -->
-                      <li class="nav-item <?php if($page=="contact-us"){ echo 'active';} ?>"><a class="nav-link" href="index.php?page=home">Contact Us</a></li>
+                      <li class="nav-item <?php if($page=="contact-us"){ echo 'active';} ?>"><a class="nav-link" href="contact-us.php?page=contact-us">Contact Us</a></li>
                       <li class="nav-item "><h2><a href="enqueryform.php" class="btn btn-warning blink"><strong>Admission Now</strong></a></h2></li>
                     </ul>
                   </div>
