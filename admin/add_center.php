@@ -12,11 +12,11 @@ $msg = "";
   if($_SESSION['role']!='1'){
     header('location:index.php');
   }
-// $query="SELECT * FROM `fun_aboutus` WHERE `status`='1'";
-// $run=mysqli_query($conn,$query);
-// while ($data=mysqli_fetch_assoc($run)) {
-//   $news[]=$data;
-// }
+$query="SELECT * FROM `sh_addcenter` WHERE `status`='1'";
+$run=mysqli_query($conn,$query);
+while ($data=mysqli_fetch_assoc($run)) {
+  $center[]=$data;
+}
 ?>
 
 <!DOCTYPE html>
@@ -38,49 +38,62 @@ $msg = "";
             <div class="card-header bg-secondary text-light"><h4>Add Center</h4></div>
             <div class="card-body">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <form action="action.php" method="POST" enctype="multipart/form-data">
                      <div class="form-group row">
                          <div class="col-sm-12 mb-3">
                           <label class="label">Center Code</label>
                          <input type="text" class="form-control" name="cent_code" placeholder="Enter Center Code">
                           </div> 
-                          <div class="col-sm-12">
+                          <div class="col-sm-12 mb-3">
                             <label class="label">Center Name</label>
                            <input type="text" class="form-control" name="cent_name" placeholder="Enter Center Name">
                           </div> 
-                          <div class="col-sm-12">
+                          <div class="col-sm-12 mb-3">
                             <label class="label">Address</label>
                             <textarea class="form-control" name="address" rows="3" col="12"></textarea>
                           </div>   
-                          <div class="col-sm-12">
+                          <div class="col-sm-12 mb-3">
                             <label class="label">Contact No.</label>
                             <input type="text" class="form-control" name="mobile" placeholder="Enter Center Name">
                           </div>                                
+                          <div class="col-sm-12 mb-3">
+                            <label class="label">Email</label>
+                            <input type="mail" class="form-control" name="mail" placeholder="Enter Email">
+                          </div>
+                             <div class="col-sm-12 mb-3">
+                            <label class="label">Password</label>
+                            <input type="mail" class="form-control" name="pass" placeholder="Enter Password">
+                          </div>
                       </div>
                     <input type="submit" name="add_center" class="btn btn-success btn-sm" value="Submit">
                   </form>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                   <div class="table-responsive">
                     <table id="datatable" class="table table-hovered table-bordered">
                       <thead>
                         <tr class="bg-dark text-light">
                           <th>#</th>
-                          <th>Heading</th>
-                          <th>Description</th>
-                          <th>Edit</th>
-                          <th>Delete</th>
+                          <th>Center Code</th>
+                          <th>Center Name</th>
+                          <th>Address</th>
+                          <th>Contact No.</th>
+                          <th>Create ID & Pass</th>
+                          <th>Action</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <?php $i=0; foreach ($news as $newss) { ++$i; ?>
+                        <?php $i=0; foreach ($center as $centerlist) { ++$i; ?>
                         <tr>
                           <td><?php echo $i; ?></td>
-                          <td><?php echo $newss['heading']; ?></td>
-                          <td><?php echo $newss['description']; ?></td>
-                          <td><a href="update_news.php?id=<?php echo $newss['id']; ?>"><i class="fa fa-edit btn btn-sm btn-success"></i></a></td>
-                          <td><a class="del" data-id="<?php echo $newss['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
+                          <td><?php echo $centerlist['cent_code']; ?></td>
+                          <td><?php echo $centerlist['cent_name']; ?></td>
+                          <td><?php echo $centerlist['address']; ?></td>
+                          <td><?php echo $centerlist['mobile']; ?></td>
+
+                          <td><a href="" class="btn btn-sm btn-warning" >Create</a></td>
+                          <td><a href="update_news.php?id=<?php echo $centerlist['id']; ?>"><i class="fa fa-edit btn btn-sm btn-success"></i></a><a class="del" data-id="<?php echo $centerlist['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
                         </tr>  
                         <?php } ?>
                       </tbody>
