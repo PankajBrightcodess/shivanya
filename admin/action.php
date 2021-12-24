@@ -33,7 +33,9 @@ function Imageupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size
 	}
 	return $error;
 }
+// '''''''''''''''''''''''''''''''''''''''
 if(isset($_POST['login'])){
+	// print_r($_POST);die;
 	$email=$_POST['email'];
 	$pass=$_POST['pass'];
 	$query="SELECT * FROM `admin` WHERE `email`='$email' and `password`='$pass' and `status`='1'";
@@ -46,9 +48,7 @@ if(isset($_POST['login'])){
 		if($_SESSION['role']==1){
 			header('location:dashboard.php');
 		}
-		elseif ($_SESSION['role']==2){
-			header('location:../member/dashboard.php'); 
-		}	
+			
 	}
 	else{
 		$_SESSION['msg']='Invalid details !!!';

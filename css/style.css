@@ -2,6 +2,12 @@
 body{
 font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 h1{
 }
@@ -147,6 +153,29 @@ color:#D70104;
 }
 .centerlogin{
     margin-top: 50px;
+}
+.small-box h3, .small-box p {
+    z-index: 5;
+}
+.small-box h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    padding: 0;
+    white-space: nowrap;
+    color: white;
+}
+.small-box .inner p {
+    color: white;
+}
+.small-box>.inner {
+    padding: 10px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.text-sm {
+    font-size: .875rem!important;
 }
  @keyframes glowing {
         0% {

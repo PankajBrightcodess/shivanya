@@ -13,22 +13,19 @@
     <section class="pages">
         <div class="container">
             <div class="row">
-                
+                <div class="col-md-12"><h2>Location and Overview:</h2><hr></div>
                 <div class="col-lg-6">
-                    <h2>Location and Overview:</h2>
-                    <p>Established in the year 2015, The Shivanya Computer Education in Bokaro, Bokaro is a top player in the category Computer Academy in the Bokaro. This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Bokaro. Over the course of its journey, this business has established a firm foothold in it’s industry. The belief that customer satisfaction is as important as their products and services, have helped this establishment garner a vast base of customers, which continues to grow by the day.</p>
+                    
+                    <p>Established in the year 2017, The Shivanya Computer Education in Bokaro, Bokaro is a top player in the category Computer Academy in the Bokaro. Shivanya Computer Education Private Limited to offer quality education which will ultimately lead the young minds to a successful career. We do not limit ourselves only to classroom teaching but we think beyond it. Registered Under Ministry of Corporate Affairs, Govt. of India and Registered under Income Tax Department, Govt. of India.The Company is also Certified by Quality Management System An ISO 9001:2015 Certified.The Institution Conducting Computer Oriented Courses. It Offers Courses of One Month, Two Months, Three Months, Six Months, One Year, One Year Six Months, Two Years and Short Term Duration Courses.The Institute Provide Value Based Quality Education For Computer Technology.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="images/comm.jpg" alt="com" class="img-fluid">
+                    <img src="images/comm.jfif" alt="com" class="img-fluid">
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-2">
                 <div class="col-lg-12">
-                     <p>This business employs individuals that are dedicated towards their respective roles and put in a lot of effort to achieve the common vision and larger goals of the company. In the near future, this business aims to expand its line of products and services and cater to a larger client base. In Bokaro, this establishment occupies a prominent location in Bokaro. It is an effortless task in commuting to this establishment as there are various modes of transport readily available. It is known to provide top service in the following categories: DNITC, DCITC, PG-DCSC, MDCSC, ADCPC, DCOMPC, ADCSC, DCOAC, MCCSC etc.</p>
-
-                    <h2>Products and Services offered:</h2>
-                    <p>The Shivanya Computer Education in Bokaro has a wide range of products and services to cater to the varied requirements of their customers. The staff at this establishment are courteous and prompt at providing any assistance. They readily answer any queries or questions that you may have. Pay for the product or service with ease by using any of the available modes of payment, such as Cash,Visa Card,Debit Card,Cheques,Credit Card. This establishment is functional from 09:00-00:00 - 21:00-00:00.</p>
+                     <p>We embrace a learning environment that will prepare you for the path ahead. Our classes incorporate traditional learning styles as well as hands-on experiences. It is known to provide top service in the following categories: DNITC, DCITC, PG-DCSC, MDCSC, ADCPC, DCOMPC, ADCSC, DCOAC, MCCSC etc. Your success is our priority. To support our inclusive community, we provide a personal approach, tailoring learning methods to each student's needs. our time duration is 07:00 AM to 05:00 PM.</p>
                 </div>
             </div>
         </div>

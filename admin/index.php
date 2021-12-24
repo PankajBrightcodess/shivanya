@@ -18,7 +18,7 @@
 	<?php include 'header-links.php'; ?>
 	<title>Admin Login | Shivanya Computer Education</title>
 </head>
-<body style="background:#e69200; ">
+<body style="background:#e8e7e5; ">
 	<section class="login" style="margin-top: 15rem;">
 		<div class="container">
 			<div class="row">

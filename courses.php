@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-lg-6">
                     <ul>
-                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal4">Marter Diploma in Computer Course (MDCC)</a></li>       
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal4">Master Diploma in Computer Course (MDCC)</a></li>       
                     </ul>
                 </div>
                 <div class="col-lg-6">
@@ -283,7 +283,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">Marter Diploma in Computer Course (MDCC)</h6>
+            <h6 class="modal-title" id="exampleModalLabel">Master Diploma in Computer Course (MDCC)</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>

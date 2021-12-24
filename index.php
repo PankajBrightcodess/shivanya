@@ -52,36 +52,13 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2>
-                    <!-- <span>We Provide the Best Tutors for</span> -->
                     <a href="centrelogin.php" class="btn btn-warning blink"><strong>Centre Login</strong></a>
                     <a href="centerlist.php" class="btn btn-warning blink"><strong>Centre List</strong></a>
-                    <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink"><strong>New Centre Inquery</strong></a>
+                    <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink"><strong>New Centre Enquiry</strong></a>
                     <a href="results.php" class="btn btn-warning blink"><strong>Results</strong></a>
                     
                 </h2>
             </div>
-           <!--  <div class="col-lg-12 ">
-                <h2>
-                    <span>We Provide the Best Tutors for</span>
-                    <a href="courses.php?page=courses" class="btn btn-warning">DNITC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">DCITC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">PG-DCSC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">MDCSC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">ADCPC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">DCOMPC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">ADCSC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">DCOAC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">MCCSC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">DCFAC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">DDTPC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">DWDC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">DCSC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">CCSC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">CBCC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">CCFAC</a>
-                    <a href="courses.php?page=courses" class="btn btn-warning">Other</a>
-                </h2>
-            </div> -->
         </div>
 
     </div>
@@ -104,12 +81,12 @@
 
         	<div class="col-md-6 col-lg-4">
             	<h1>THE SHIVANYA COMPUTER EDUCATION</h1>
-                <p>Shivanya Computer Education Private Limited to offer quality education which will ultimately lead the young minds to a successful career. We do not limit ourselves only to classroom teaching but we think beyond it. This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Ranchi. Over the course of its journey, this business has established a firm foothold in it’s industry. The belief that customer satisfaction is as important as their products and services, have helped this establishment garner a vast base of customers, which continues to grow by the day.</span></p>
+                <p>Shivanya Computer Education Private Limited to offer quality education which will ultimately lead the young minds to a successful career. We do not limit ourselves only to classroom teaching but we think beyond it. Quality education is possible only through quality teachers who come out from quality institution in order to achieve target of quality teacher education, it is great pleasure to announce that our institution would do its best for the upliftment of the society through quality education and development of skills.</span></p>
                 <p class="text-center"><a href="#" class="btn btn-warning">Read More</a></p>
             </div>
             <div class="col-md-12 col-lg-4">
                 <video controls="" autoplay="" muted="">
-                    <source src="video/introduct.mp4" type="video/mp4">
+                    <source src="video/class.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="clearfix"></div>
@@ -168,15 +145,15 @@
                           <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="testi-pic"><img src="images/successful-students/testi.webp" alt="testimonial" class="img-fluid img-circle"></div>
-                                <p>" I used to struggle with maths. After getting a home tutor I am doing maths very easily." </p>
+                                <p>"This was my first time taking a course in this format and it far exceeded my expectations." </p>
                             </div>
                             <div class="carousel-item">
                                 <div class="testi-pic"><img src="images/successful-students/ss3.jpg" alt="testimonial"></div>
-                                <p>" After posting my learning requirement, I got a good tutor within a day. Excellent Service! "</p>
+                                <p>"I came to the class already with some knowledge of the program, but learned a good deal more thanks to your class."</p>
                             </div>
                             <div class="carousel-item">
                                 <div class="testi-pic"><img src="images/successful-students/ss4.jpg" alt="testimonial"></div>
-                                <p>" Thanks!, I was able to score 83% in 10th. This was way above what I scored usually……my parents were extremely happy "</p>
+                                <p>"The class is awesome! The instructor spoke very clear and was very knowledgeable and patient."</p>
                             </div>
                           </div>
                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -68,7 +68,7 @@
             <label>Training Mode<span style="color: Red;">*</span></label>
             <select class="form-control" name="course">
                 <option>---SELECT---</option>
-                <option value="ragular">Ragular</option>
+                <option value="ragular">Regular</option>
                 <option value="online">Online</option>
                 <option value="correspondence">Correspondence</option>
             </select>

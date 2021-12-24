@@ -3,11 +3,11 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-2 col-xl-2">
                 <h3>Quick Links</h3><hr class="border-light">
-                <p><a href="#">Home</a></p>
-                <p><a href="#">About Us</a></p>
-                <p><a href="#">Courses</a></p>
-                <p><a href="#">Gallery</a></p>
-                <p><a href="#">Contact Us</a></p>
+                <p><a href="index.php">Home</a></p>
+                <p><a href="about-us.php?page=about-us">About Us</a></p>
+                <p><a href="courses.php?page=courses">Courses</a></p>
+                <p><a href="certificate.php?page=certificate">Cetificate</a></p>
+                <p><a href="contact-us.php?page=contact-us">Contact Us</a></p>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 ">
                 <div>
@@ -24,7 +24,7 @@
                 <h3>Stay Connected</h3><hr class="border-light">
                 <p>Shivanya Computer Education Pvt.Ltd.</p>
                 <p>An ISO 9001:2015 Certified institute</p>
-                <p>Ranchi – 827013 (Jharkhand)</p>
+                <p>Bokaro – 827012(Jharkhand)</p>
                 <p><span>Mobile No. :</span><a href="tel:09852528104"  title="09852528104"> (+91) - 9852528104</a></p>
                 <p><span>Email : </span><a href="">shivanyacomputereducation@gmail.com</a></p>
                 <div class="social">
@@ -58,3 +58,18 @@
         </div>
     </div>
 </section>
+
+      <script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     // console.log(status);
+     return false;    
+   }
+}
+</script>
+

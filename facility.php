@@ -27,7 +27,7 @@
            </div>
              <div class="col-md-12"><hr class="border-danger"></div>
            <div class="col-md-6">
-                <img src="images/12.jpg" alt="1.jpg" class="img-fluid">
+                <img src="images/i.jfif" alt="i.jfif" class="img-fluid">
            </div>
             <div class="col-md-6">
                 <h5 class="mt-4">Study Support</h5>
@@ -40,7 +40,7 @@
                 <p>1. Online /Offline test Series is conducted by us based on patterns & syllabus.</p>
             </div>
              <div class="col-md-6">
-                <img src="images/img1.jpg" alt="ac.gif" class="img-fluid">
+                <img src="images/online.jpg" alt="online.jpg" class="img-fluid">
            </div>
            <div class="col-md-12"><hr class="border-danger"></div>
            <div class="col-md-6">
@@ -64,14 +64,14 @@
            </div>
            <div class="col-md-6">
                 <h5 class="mt-4">Regular Doubt Classes</h5>
-                <p>1. Separate Daobt Clearing Teachers are always Present to Help and Resolve the doubts through out the day.</p>
+                <p>1. Separate Doubt Clearing Teachers are always Present to Help and Resolve the doubts through out the day.</p>
                 <p>2. Morning to Evening.</p>
            </div>
            <div class="col-md-12"><hr class="border-warning"></div>
             <div class="col-md-6">
                   <h5 class="mt-4">Study Support</h5>
                 <p>1. We Provide Comprehensive Study Material.</p>
-                <p>2. We also give Important Work Seets which help the Students to Compprehend the Concepts Wholly.</p>
+                <p>2. We also give Important Work Sheet which help the Students to Compprehend the Concepts easily.</p>
             </div>
              <div class="col-md-6">
                  <img src="images/ss.jpg" alt="ss.jpg" class="img-fluid">
