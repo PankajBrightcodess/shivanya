@@ -15,42 +15,31 @@
 
         <!-- 1 -->
                 <div class="row my-img">
-                            <div class="col-md-4 my-img mb-3">
+                            <div class="col-md-3 my-img mb-3">
                                     <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
                                       <img src="images/certificate/cer01.jpeg" id="img1" class="img-responsive showimg" width="100%">
                                     </a>
                                 </div>
-                                <div class="col-md-4 my-img mb-3">
+                                <div class="col-md-3 my-img mb-3">
                                     <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
                                       <img src="images/certificate/cer02.jpeg" id="img2" class="img-responsive showimg" width="100%">
                                     </a>
                                 </div>
-                                <div class="col-md-4 my-img mb-3">
+                                <div class="col-md-3 my-img mb-3">
                                     <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
                                       <img src="images/certificate/cer03.jpeg" id="img3" class="img-responsive showimg" width="100%">
                                     </a>
                                 </div>
+                                <div class="col-md-3 my-img mb-3">
+                                  <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+                                     <img src="images/certificate/cer08.jpeg" id="img4" class="img-responsive showimg" width="100%">
+                                  </a>  
+                               </div> 
                                  
                                 
                       </div>
            <!-- 2      -->
-                   <div class="row my-img">
-                        <div class="col-md-4 my-img mb-3">
-                                    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                                      <img src="images/certificate/cer04.jpeg" id="img4" class="img-responsive showimg" width="100%">
-                                    </a>  
-                                </div> 
-                        <div class="col-md-4 my-img mb-3">
-                                <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                                  <img src="images/certificate/cer05.jpeg" id="img4" class="img-responsive showimg" width="100%">
-                                </a>  
-                        </div>  
-                        <div class="col-md-4 my-img mb-3">
-                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                              <img src="images/certificate/cer08.jpeg" id="img4" class="img-responsive showimg" width="100%">
-                            </a>  
-                        </div> 
-                  </div>
+           
                   <div class="row my-img">
                         <div class="col-md-4 my-img mb-3">
                             <a href="#" id="link1" data-toggle="modal" data-target="#myModal">

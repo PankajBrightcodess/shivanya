@@ -27,7 +27,7 @@
            </div>
              <div class="col-md-12"><hr class="border-danger"></div>
            <div class="col-md-6">
-                <img src="images/i.jfif" alt="i.jfif" class="img-fluid">
+                <img src="images/imh1.jpg" alt="i.jfif" class="img-fluid">
            </div>
             <div class="col-md-6">
                 <h5 class="mt-4">Study Support</h5>
@@ -36,11 +36,11 @@
             </div>
             <div class="col-md-12"><hr class="border-danger"></div>
             <div class="col-md-6">
-                <h5 class="mt-4">Test Serise</h5>
+                <h5 class="mt-4">Test Series</h5>
                 <p>1. Online /Offline test Series is conducted by us based on patterns & syllabus.</p>
             </div>
              <div class="col-md-6">
-                <img src="images/online.jpg" alt="online.jpg" class="img-fluid">
+                <img src="images/testserice.jfif" alt="testserice.jfif" class="img-fluid">
            </div>
            <div class="col-md-12"><hr class="border-danger"></div>
            <div class="col-md-6">

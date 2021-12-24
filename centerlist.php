@@ -30,35 +30,65 @@
                        <tr>
                            <td>1.</td>
                            <td>SCE0001</td>
-                           <td>Shivanya Computer Education</td>
-                           <td>Ranchi Jharkhand</td>
-                           <td>******1267</td>
+                           <td>NATIONAL EDUCATION CENTER</td>
+                           <td>2nd Floor, Janki Tower,
+                                Opp. Easy Day Club, Morabadi,
+                                Ranchi – 834008, Jharkhand</td>
+                           <td>******8436</td>
                        </tr>
                        <tr>
                            <td>2.</td>
                            <td>SCE0002</td>
-                           <td>Shivanya Computer Education</td>
-                           <td>Ranchi Jharkhand</td>
-                           <td>******1237</td>
+                           <td>NEW DESHARI COMPUTER TRENING CENTRE</td>
+                           <td>JQR7, Near PNB Bnak, Ramgarh 897656 Jharkhand</td>
+                           <td>******4973</td>
                        </tr>
                        <tr>
                            <td>3.</td>
                            <td>SCE0003</td>
-                           <td>Shivanya Computer Education</td>
-                           <td>Ranchi Jharkhand</td>
-                           <td>******1237</td>
+                           <td>HIND COMPUTER EDUCATION</td>
+                           <td>01TSC, Opp. Big Bazar, 834015 Ranchi Jharkhand</td>
+                           <td>******7395</td>
                        </tr>
                        <tr>
                            <td>4.</td>
                            <td>SCE0004</td>
-                           <td>Shivanya Computer Education</td>
-                           <td>Ranchi Jharkhand</td>
-                           <td>******1227</td>
+                           <td> NEED INFORMATION TECHNOLOGY</td>
+                           <td>Street1, Near Ratu, ranchi 8200015 Jharkhand</td>
+                           <td>******9246</td>
                        </tr>
-                       <tr></tr>
-                       <tr></tr>
-                       <tr></tr>
-                       <tr></tr>
+                       <tr><td>5.</td>
+                           <td>SCE0005</td>
+                           <td>SATYAM COMPUTER</td>
+                           <td>Gandhi nagar, Near bank Mode, Bokaro 8270045 Jharkhand</td>
+                           <td>******3481</td></tr>
+                       <tr><td>6.</td>
+                           <td>SCE0006</td>
+                           <td>FUTURE GALAXY COMPUTER EDUCATION</td>
+                           <td>ACC Colony, Near ASC Collage, Hazaribagh 845762 Jharkhand</td>
+                           <td>******2886</td></tr>
+                       <tr><td>7.</td>
+                           <td>SCE0007</td>
+                           <td>WAVE COMPUTERS</td>
+                           <td>Subash nagar,Dhanbad 8309876,Jharkhand</td>
+                           <td>******7936</td></tr>
+                       <tr><td>8.</td>
+                           <td>SCE0008</td>
+                           <td>ULTRA COMPUTER CENTRE</td>
+                           <td>ST-987, Ranchi road, Dhanbad 8245006 Jharkhand</td>
+                           <td>******4917</td></tr>
+
+                           <tr><td>9.</td>
+                           <td>SCE0009</td>
+                           <td> VIJAY COMPUTER INSTITUTE</td>
+                           <td>762-BS,Near SO office, Khalari ranchi 827305 Jharkhand</td>
+                           <td>******4910</td></tr>
+
+                           <tr><td>10.</td>
+                           <td>SCE0010</td>
+                           <td>INSTITUTE OF YOUNG ENGINEERS (IYE)</td>
+                           <td>AV87-12,Near Durga Printers,Ratu ranchi 824570 Jharkhand</td>
+                           <td>******3017</td></tr>
                    </tbody>
                </table> 
                </div>

@@ -23,8 +23,9 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                 <h3>Stay Connected</h3><hr class="border-light">
                 <p>Shivanya Computer Education Pvt.Ltd.</p>
-                <p>An ISO 9001:2015 Certified institute</p>
+                <p>ADARSH CO OPERATIVE , SHOPPING CENTRE , SHOP NO - 24 , BOKARO</p>
                 <p>Bokaro – 827012(Jharkhand)</p>
+                <p>An ISO 9001:2015 Certified institute</p>
                 <p><span>Mobile No. :</span><a href="tel:09852528104"  title="09852528104"> (+91) - 9852528104</a></p>
                 <p><span>Email : </span><a href="">shivanyacomputereducation@gmail.com</a></p>
                 <div class="social">
