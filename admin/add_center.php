@@ -47,7 +47,7 @@ while ($data=mysqli_fetch_assoc($run)) {
                                     </div> 
                                     <div class="col-sm-12">
                                       <label class="label">Description</label>
-                                    <textarea class="form-control" name="description" id="editor1" rows="8" col="12"></textarea>
+                                     <input type="text" class="form-control" name="heading" placeholder="Enter Heading">
                                     </div>                                    
                       </div>
                     <input type="submit" name="add_aboutus" class="btn btn-success btn-sm" value="Submit">
