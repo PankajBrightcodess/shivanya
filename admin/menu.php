@@ -15,16 +15,14 @@ error_reporting(0);
 				<li class="nav-item">
 					<a class="nav-link <?php if($pg=="dashboard"){ echo "active"; } ?>" href="dashboard.php">Dashboard <span class="sr-only">(current)</span></a>
 				</li>
-				<!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="" id="AboutVEWT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+				<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="AboutVEWT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Center</a>
+
           <div class="dropdown-menu" aria-labelledby="AboutVEWT">
-          	 <a class="dropdown-item" href="add_banner.php">Add Banner</a>
-            <a class="dropdown-item" href="add_gallery.php">Add Gallery</a>
-            <a class="dropdown-item" href="add_notice.php">Add Notice</a>
-            <a class="dropdown-item" href="add_events.php">Add Events</a>
-            <a class="dropdown-item" href="add_news.php">Add News</a>
+          	 <a class="dropdown-item" href="add_banner.php">Add Center</a>
+            <a class="dropdown-item" href="add_gallery.php">Center List</a>
           </div>
-         </li> -->
+         </li>
 
         <!--  <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="" id="AboutVEWT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Staff</a>
