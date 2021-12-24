@@ -100,22 +100,24 @@
                 <div class="col-md-12">
                   <h2>Our Successful Students</h2><hr class="w-50 mb-5 border-warning">
                    <div class="customer-logos slider">
-                    <div class="slide"><a href="#"><img src="images/successful-students/ss12.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss1.jpg" alt="successful-students" class="w-100"></a></div>
+                    <div class="slide"><a href="#"><img src="images/successful-students/01.jfif" alt="successful-students" class="w-100"></a></div>
                       
-                       <div class="slide"><a href="#"><img src="images/successful-students/ss9.jpg" alt="successful-students" class="w-100"></a></div>
                       
-                       <div class="slide"><a href="#"><img src="images/successful-students/ss14.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss15.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss3.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss4.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss5.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss6.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss8.jpg" alt="successful-students" class="w-100"></a></div>
-                        <div class="slide"><a href="#"><img src="images/successful-students/ss10.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss7.jpg" alt="successful-students" class="w-100"></a></div>
+                       <!-- <div class="slide"><a href="#"><img src="images/successful-students/ss9.jpg" alt="successful-students" class="w-100"></a></div> -->
+                      
+                       <div class="slide"><a href="#"><img src="images/successful-students/03.jfif" alt="successful-students" class="w-100"></a></div>
+                      <div class="slide"><a href="#"><img src="images/successful-students/04.jfif" alt="successful-students" class="w-100"></a></div>
+                      <div class="slide"><a href="#"><img src="images/successful-students/02.jfif" alt="successful-students" class="w-100"></a></div>
+                      <div class="slide"><a href="#"><img src="images/successful-students/05.jfif" alt="successful-students" class="w-100"></a></div>
+                        <div class="slide"><a href="#"><img src="images/successful-students/08.jfif" alt="successful-students" class="w-100"></a></div>
+                      <div class="slide"><a href="#"><img src="images/successful-students/06.jfif" alt="successful-students" class="w-100"></a></div>
+                      <div class="slide"><a href="#"><img src="images/successful-students/07.jfif" alt="successful-students" class="w-100"></a></div>
+                    
+                      <!-- <div class="slide"><a href="#"><img src="images/successful-students/09.jfif" alt="successful-students" class="w-100"></a></div> -->
+                       <!--  <div class="slide"><a href="#"><img src="images/successful-students/ss10.jfif" alt="successful-students" class="w-100"></a></div>
+                      <div class="slide"><a href="#"><img src="images/successful-students/ss7.jfif" alt="successful-students" class="w-100"></a></div>
                      
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss11.jpg" alt="successful-students" class="w-100"></a></div>
+                      <div class="slide"><a href="#"><img src="images/successful-students/ss11.jfif" alt="successful-students" class="w-100"></a></div> -->
                       
 
                      <!--  <div class="slide"><a href="#"><img src="images/successful-students/ss13.jpg" alt="successful-students" class="w-100"></a></div>
@@ -144,15 +146,15 @@
                           </ol>-->
                           <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="testi-pic"><img src="images/successful-students/testi.webp" alt="testimonial" class="img-fluid img-circle"></div>
+                                <div class="testi-pic"><img src="images/successful-students/08.jfif" alt="testimonial" class="img-fluid img-circle"></div>
                                 <p>"This was my first time taking a course in this format and it far exceeded my expectations." </p>
                             </div>
                             <div class="carousel-item">
-                                <div class="testi-pic"><img src="images/successful-students/ss3.jpg" alt="testimonial"></div>
+                                <div class="testi-pic"><img src="images/successful-students/03.jfif" alt="testimonial"></div>
                                 <p>"I came to the class already with some knowledge of the program, but learned a good deal more thanks to your class."</p>
                             </div>
                             <div class="carousel-item">
-                                <div class="testi-pic"><img src="images/successful-students/ss4.jpg" alt="testimonial"></div>
+                                <div class="testi-pic"><img src="images/successful-students/07.jfif" alt="testimonial"></div>
                                 <p>"The class is awesome! The instructor spoke very clear and was very knowledgeable and patient."</p>
                             </div>
                           </div>
