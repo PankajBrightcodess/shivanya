@@ -57,6 +57,19 @@ if(isset($_POST['login'])){
 }
 
 if(isset($_POST['add_center'])){
-	echo '<pre>';
-	print_r($_POST);die;
+	$cent_code = $_POST['cent_code'];
+	$cent_name = $_POST['cent_name'];
+	$address = $_POST['address'];
+	$mobile = $_POST['mobile'];
+	$added_on = date('Y-m-d');
+	$query="INSERT INTO `sh_addcenter`(`cent_code`,`cent_name`,`address`,`mobile`,`added_on`) VALUES ('$cent_code','$cent_name','$address','$mobile','$added_on')";
+	$sql=mysqli_query($conn,$query);
+	if($sql){
+		 header('Location:add_center.php');
+		$_SESSION['msg']="Center Added Successfully !!!";	
+	}
+	else{
+		$_SESSION['msg']="Center Not Added !!!";
+		header("location:$_SERVER[HTTP_REFERER]");
+	}
 }

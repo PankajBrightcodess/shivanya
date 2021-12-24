@@ -12,11 +12,11 @@ $msg = "";
   if($_SESSION['role']!='1'){
     header('location:index.php');
   }
-$query="SELECT * FROM `fun_aboutus` WHERE `status`='1'";
-$run=mysqli_query($conn,$query);
-while ($data=mysqli_fetch_assoc($run)) {
-  $news[]=$data;
-}
+// $query="SELECT * FROM `fun_aboutus` WHERE `status`='1'";
+// $run=mysqli_query($conn,$query);
+// while ($data=mysqli_fetch_assoc($run)) {
+//   $news[]=$data;
+// }
 ?>
 
 <!DOCTYPE html>
