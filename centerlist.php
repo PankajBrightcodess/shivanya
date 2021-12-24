@@ -86,7 +86,7 @@
 
                            <tr><td>10.</td>
                            <td>SCE0010</td>
-                           <td>INSTITUTE OF YOUNG ENGINEERS (IYE)</td>
+                           <td>INSTITUTE OF YOUNG ENGINEERS</td>
                            <td>AV87-12,Near Durga Printers,Ratu ranchi 824570 Jharkhand</td>
                            <td>******3017</td></tr>
                    </tbody>
