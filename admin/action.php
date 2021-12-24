@@ -61,15 +61,43 @@ if(isset($_POST['add_center'])){
 	$cent_name = $_POST['cent_name'];
 	$address = $_POST['address'];
 	$mobile = $_POST['mobile'];
+	$mail = $_POST['mail'];
+	$pass = $_POST['pass'];
+	$role = $_POST['role'];
 	$added_on = date('Y-m-d');
+
 	$query="INSERT INTO `sh_addcenter`(`cent_code`,`cent_name`,`address`,`mobile`,`added_on`) VALUES ('$cent_code','$cent_name','$address','$mobile','$added_on')";
+	
+	$sql=mysqli_query($conn,$query);
+		if($sql){
+			$query1="INSERT INTO `admin`(`name`,`email`,`password`,`role`) VALUES ('$cent_name','$mail','$pass','$role')";
+			$sql1=mysqli_query($conn,$query1);
+				if($sql1){
+					header('Location:add_center.php');
+					$_SESSION['msg']="Center Added Successfully !!!";
+				}
+				else{
+					$_SESSION['msg']="Center Not Added !!!";
+					header("location:$_SERVER[HTTP_REFERER]");
+				}
+			}
+		else{
+			        $_SESSION['msg']="Center Not Added !!!";
+			        header("location:$_SERVER[HTTP_REFERER]");
+		   }
+	}
+	
+	if(isset($_POST['del_center'])){
+	$id = $_POST['id'];	
+	$query="DELETE FROM `sh_addcenter` WHERE `id`='$id'";
 	$sql=mysqli_query($conn,$query);
 	if($sql){
 		 header('Location:add_center.php');
-		$_SESSION['msg']="Center Added Successfully !!!";	
+		$_SESSION['msg']="Center Deleted Successfully !!!";	
 	}
 	else{
-		$_SESSION['msg']="Center Not Added !!!";
+		$_SESSION['msg']="Center Not Deleted!!!";
 		header("location:$_SERVER[HTTP_REFERER]");
 	}
-}
+   }
+?>

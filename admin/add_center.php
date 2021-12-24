@@ -63,11 +63,18 @@ while ($data=mysqli_fetch_assoc($run)) {
                           </div>
                              <div class="col-sm-12 mb-3">
                             <label class="label">Password</label>
-                            <input type="mail" class="form-control" name="pass" placeholder="Enter Password">
+                            <input type="text" class="form-control" name="pass" placeholder="Enter Password">
+                          </div>
+                          <div class="col-sm-12 mb-3">
+                            <label class="label">Role</label>
+                            <select name="role" class="form-control">
+                              <option >---Select---</option>
+                              <option value="2">Center</option>
+                            </select>
                           </div>
                       </div>
                     <input type="submit" name="add_center" class="btn btn-success btn-sm" value="Submit">
-                  </form>
+                  </form> 
                 </div>
                 <div class="col-md-8">
                   <div class="table-responsive">
@@ -79,7 +86,8 @@ while ($data=mysqli_fetch_assoc($run)) {
                           <th>Center Name</th>
                           <th>Address</th>
                           <th>Contact No.</th>
-                          <th>Create ID & Pass</th>
+                          <th>Email</th>
+                          <th>Password</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -91,9 +99,10 @@ while ($data=mysqli_fetch_assoc($run)) {
                           <td><?php echo $centerlist['cent_name']; ?></td>
                           <td><?php echo $centerlist['address']; ?></td>
                           <td><?php echo $centerlist['mobile']; ?></td>
-
-                          <td><a href="" class="btn btn-sm btn-warning" >Create</a></td>
-                          <td><a href="update_news.php?id=<?php echo $centerlist['id']; ?>"><i class="fa fa-edit btn btn-sm btn-success"></i></a><a class="del" data-id="<?php echo $centerlist['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
+                          <td><?php echo $centerlist['email']; ?></td>
+                          <td><?php echo $centerlist['password']; ?></td>
+                          <td><a href="update_news.php?id=<?php echo $centerlist['id']; ?>"><i class="fa fa-edit btn btn-sm btn-success"></i></a>
+                          <a class="del" data-id="<?php echo $centerlist['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
                         </tr>  
                         <?php } ?>
                       </tbody>
@@ -110,15 +119,14 @@ while ($data=mysqli_fetch_assoc($run)) {
 </body>
 <?php include 'footer-links.php'; ?>
 <script>
-  $(document).ready(function(){
-    $('#datatable').DataTable();
-    $("body").on("click",".del",function(){
+   $("body").on("click",".del",function(){
+      debugger;
       var id=$(this).attr('data-id');
       if (confirm('You want to delete !!!')) {
         $.ajax({
           url:"action.php",
           type:"POST",
-          data:{id:id,del_aboutus:'del_aboutus'},
+          data:{id:id,del_center:'del_center'},
           success: function(data){
             location.reload();
           }
@@ -128,6 +136,28 @@ while ($data=mysqli_fetch_assoc($run)) {
         alert('Record Deletion Cancel!');
       }
     });
+  $(document).ready(function(){
+    $('#datatable').DataTable();
+
+
+
+    // $("body").on("click",".del",function(){
+    //   debugger;
+    //   var id=$(this).attr('data-id');
+    //   if (confirm('You want to delete !!!')) {
+    //     $.ajax({
+    //       url:"action.php",
+    //       type:"POST",
+    //       data:{id:id,del_center:'del_center'},
+    //       success: function(data){
+    //         location.reload();
+    //       }
+    //     });
+    //   }
+    //   else{
+    //     alert('Record Deletion Cancel!');
+    //   }
+    // });
 
     var table=$('.data-table').DataTable({
       scrollCollapse: true,
