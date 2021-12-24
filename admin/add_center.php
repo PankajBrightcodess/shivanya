@@ -51,14 +51,14 @@ while ($data=mysqli_fetch_assoc($run)) {
                           </div> 
                           <div class="col-sm-12">
                             <label class="label">Address</label>
-                          <textarea class="form-control" name="address" rows="8" col="12"></textarea>
+                            <textarea class="form-control" name="address" rows="3" col="12"></textarea>
                           </div>   
                           <div class="col-sm-12">
                             <label class="label">Contact No.</label>
-                          <input type="text" class="form-control" name="mobile" placeholder="Enter Center Name">
+                            <input type="text" class="form-control" name="mobile" placeholder="Enter Center Name">
                           </div>                                
                       </div>
-                    <input type="submit" name="add_aboutus" class="btn btn-success btn-sm" value="Submit">
+                    <input type="submit" name="add_center" class="btn btn-success btn-sm" value="Submit">
                   </form>
                 </div>
                 <div class="col-md-6">

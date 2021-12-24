@@ -55,3 +55,8 @@ if(isset($_POST['login'])){
 		header("Location: " . $_SERVER['HTTP_REFERER']);
 	}
 }
+
+if(isset($_POST['add_center'])){
+	echo '<pre>';
+	print_r($_POST);die;
+}
