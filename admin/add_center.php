@@ -53,32 +53,6 @@ while ($data=mysqli_fetch_assoc($run)) {
                     <input type="submit" name="add_aboutus" class="btn btn-success btn-sm" value="Submit">
                   </form>
                 </div>
-               <!--  <div class="col-md-6">
-                  <div class="table-responsive">
-                    <table id="datatable" class="table table-hovered table-bordered">
-                      <thead>
-                        <tr class="bg-dark text-light">
-                          <th>#</th>
-                          <th>Heading</th>
-                          <th>Description</th>
-                          <th>Edit</th>
-                          <th>Delete</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <?php $i=0; foreach ($news as $newss) { ++$i; ?>
-                        <tr>
-                          <td><?php echo $i; ?></td>
-                          <td><?php echo $newss['heading']; ?></td>
-                          <td><?php echo $newss['description']; ?></td>
-                          <td><a href="update_news.php?id=<?php echo $newss['id']; ?>"><i class="fa fa-edit btn btn-sm btn-success"></i></a></td>
-                          <td><a class="del" data-id="<?php echo $newss['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
-                        </tr>  
-                        <?php } ?>
-                      </tbody>
-                    </table>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
