@@ -19,7 +19,7 @@ error_reporting(0);
           <a class="nav-link dropdown-toggle" href="" id="AboutVEWT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Center</a>
 
           <div class="dropdown-menu" aria-labelledby="AboutVEWT">
-          	 <a class="dropdown-item" href="add_banner.php">Add Center</a>
+          	 <a class="dropdown-item" href="add_center.php">Add Center</a>
             <a class="dropdown-item" href="add_gallery.php">Center List</a>
           </div>
          </li>
