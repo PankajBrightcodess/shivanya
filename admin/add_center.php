@@ -41,18 +41,22 @@ while ($data=mysqli_fetch_assoc($run)) {
                 <div class="col-md-6">
                   <form action="action.php" method="POST" enctype="multipart/form-data">
                      <div class="form-group row">
-                                   <div class="col-sm-12 mb-3">
-                                    <label class="label">Center Code</label>
-                                   <input type="text" class="form-control" name="cent_code" placeholder="Enter Center Code">
-                                    </div> 
-                                    <div class="col-sm-12">
-                                      <label class="label">Center Name</label>
-                                     <input type="text" class="form-control" name="cent_name" placeholder="Enter Center Name">
-                                    </div> 
-                                    <div class="col-sm-12">
-                                      <label class="label">Address</label>
-                                    <textarea class="form-control" name="address" rows="8" col="12"></textarea>
-                                    </div>                                   
+                         <div class="col-sm-12 mb-3">
+                          <label class="label">Center Code</label>
+                         <input type="text" class="form-control" name="cent_code" placeholder="Enter Center Code">
+                          </div> 
+                          <div class="col-sm-12">
+                            <label class="label">Center Name</label>
+                           <input type="text" class="form-control" name="cent_name" placeholder="Enter Center Name">
+                          </div> 
+                          <div class="col-sm-12">
+                            <label class="label">Address</label>
+                          <textarea class="form-control" name="address" rows="8" col="12"></textarea>
+                          </div>   
+                          <div class="col-sm-12">
+                            <label class="label">Contact No.</label>
+                          <input type="text" class="form-control" name="mobile" placeholder="Enter Center Name">
+                          </div>                                
                       </div>
                     <input type="submit" name="add_aboutus" class="btn btn-success btn-sm" value="Submit">
                   </form>
