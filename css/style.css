@@ -2,14 +2,15 @@
 body{
 font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
-  
-}
-/*-webkit-touch-callout: none;
+-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;*/
+    user-select: none;
+  
+}
+
 h1{
 }
 #mob-pops-control p,#mob-pops-control h4{
@@ -272,6 +273,7 @@ color:#D70104;
 
 .testi-pic{
 	text-align:center;
+    margin-top: 40px;
 }
 .testi-pic img{
 	width:150px;

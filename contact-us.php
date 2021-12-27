@@ -9,6 +9,7 @@
   </head>
   <body>
   <?php include"header.php" ;?>
+  
 
   <section class="pages" id="contactpg">
   	<div class="container">
@@ -38,6 +39,9 @@
                 <p><strong><i class="fas fa-envelope text-success"></i></strong> <a href="shivanyacomputereducation@gmail.com">shivanyacomputereducation@gmail.com</a></p>
                 <p><strong><i class="fas fa-globe text-success"></i></strong> <a href="https://shivanyacomputer.com/">www.shivanyacomputer.com</a></p>
             </div>
+            <div class="col-md-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.476042260754!2d86.13541841538598!3d23.62311698465224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f42379b47dcc9f%3A0xcb08bfc6ca9ced8a!2sSHIVANYA%20COMPUTER%20EDUCATION%20PVT.LTD!5e0!3m2!1sen!2sin!4v1640603123250!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
             <div class="clearfix"></div>
         </div>
     </div>

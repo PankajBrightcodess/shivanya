@@ -39,7 +39,7 @@
                        <tr>
                            <td>2.</td>
                            <td>SCE0002</td>
-                           <td>NEW DESHARI COMPUTER TRENING CENTRE</td>
+                           <td>NEW DESHARI COMPUTER TRAINING CENTRE</td>
                            <td>JQR7, Near PNB Bnak, Ramgarh 897656 Jharkhand</td>
                            <td>******4973</td>
                        </tr>
@@ -60,7 +60,7 @@
                        <tr><td>5.</td>
                            <td>SCE0005</td>
                            <td>SATYAM COMPUTER</td>
-                           <td>Gandhi nagar, Near bank Mode, Bokaro 8270045 Jharkhand</td>
+                           <td>Gandhi nagar, Near bank Mode, Dhanbad 8270045 Jharkhand</td>
                            <td>******3481</td></tr>
                        <tr><td>6.</td>
                            <td>SCE0006</td>

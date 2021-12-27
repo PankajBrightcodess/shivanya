@@ -45,11 +45,13 @@
                       <!-- <li class="nav-item <?php if($page=="results"){ echo 'active';} ?>"><a class="nav-link" href="results.php?page=results">Results</a></li> -->
                       <!-- facility.php?page=facility -->
                      <li class="nav-item <?php if($page=="facility"){ echo 'active';} ?>"><a class="nav-link" href="facility.php?page=facility">Facilities</a></li>
+                         <li class="nav-item <?php if($page=="faculty"){ echo 'active';} ?>"><a class="nav-link" href="faculty.php?page=faculty">Faculty</a></li>
                      <!-- gallery.php?page=gallery -->
                       <li class="nav-item <?php if($page=="certificate"){ echo 'active';} ?>"><a class="nav-link" href="certificate.php?page=certificate">Certificate</a></li>
                       <!-- contact-us.php?page=contact-us -->
                       <li class="nav-item <?php if($page=="contact-us"){ echo 'active';} ?>"><a class="nav-link" href="contact-us.php?page=contact-us">Contact Us</a></li>
-                      <li class="nav-item "><h2><a href="enqueryform.php" class="btn btn-warning blink"><strong>Admission Now</strong></a></h2></li>
+                      <li class="nav-item"><h4><a href="enqueryform.php" class="btn btn-warning blink"><strong>Admission Now</strong></a></h4></li>
+                       &nbsp;<li class="nav-item"><h4><a href="results.php" class="btn btn-warning blink"><strong>Results</strong></a></h4></li>
                     </ul>
                   </div>
                 </nav>

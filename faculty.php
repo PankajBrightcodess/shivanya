@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Faculty | REX Home Tuition</title>
+    <title>Faculty | The Shivanya Computer Education</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<?php include"head-links.php" ; ?>
 
@@ -16,77 +16,30 @@
                 <div class="col-lg-12"><h2 class="text-center">Faculty</h2><hr class="w-50"></div>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <img src="images/faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Ajay Kumar</h5>
-                    <p><strong>Qualification :</strong> B Tech.</p>
+                    <div class="col-md-4">
+                    <img src="images/sce1.jpeg" alt="faculty" class="img-fluid" style="height: 200px; width: 346px;">
+                    <h5>Kumar Kundan</h5>
+                    <p><strong>Qualification :</strong>Maths Honours, MDCC-MASTER DIPLOMA IN COMPUTER, PG-DCC- Post Graduate Diploma In Computer Course</p>
+                    <p><strong>Post :</strong>Director</p>
+
+                </div>
+                <div class="col-md-4">
+                    <img src="images/sce2.jpeg" alt="faculty" class="img-fluid" style="height: 200px; width: 346px;">
+                    <h5>Vibha Kumari</h5>
+                    <p><strong>Qualification :</strong> M.Com, PG-DCC-post graduate diploma in Computer Course.</p>
+                    <p><strong>Post :</strong>Co-Director</p>
+                </div>
+                 <div class="col-md-4">
+                    <img src="images/sce3.jpeg" alt="faculty" class="img-fluid" style="height: 200px; width: 346px;">
+                    <h5>Muskan Kumari</h5>
+                    <p><strong>Qualification :</strong> B Com, Account honours, DCIT(Diploma in Computer Instructor Training).</p>
+                    <p><strong>Post :</strong> Senior Instructor</p>
                     
                 </div>
-                <div class="col-md-3">
-                    <img src="images/faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Manoj Kumar</h5>
-                    <p><strong>Qualification :</strong> M.Sc.</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="images/female-faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Vandana Mishra</h5>
-                    <p><strong>Qualification :</strong> M. Sc</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="images/faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Arun Kumar</h5>
-                    <p><strong>Qualification :</strong> B.Tech</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
             
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <img src="images/faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Rohit Singh</h5>
-                    <p><strong>Qualification :</strong> M.Sc</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="images/faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Pankaj Mishra</h5>
-                    <p><strong>Qualification :</strong> M.Tech</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="images/female-faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Puja Jain</h5>
-                    <p><strong>Qualification :</strong> Ph.D</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="images/faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Anup Sinha</h5>
-                    <p><strong>Qualification :</strong> M.Tech</p>
-                </div>
+                
                 <div class="clearfix"></div>
-            </div>
-            
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <img src="images/female-faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Shweta Pandey</h5>
-                    <p><strong>Qualification :</strong> M.Sc</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="images/female-faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Punam Das</h5>
-                    <p><strong>Qualification :</strong> M.Sc</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="images/faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5> B. K Singh</h5>
-                    <p><strong>Qualification :</strong> M.Sc</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="images/faculty.jpg" alt="faculty" class="img-fluid">
-                    <h5>Vinod Mallik</h5>
-                    <p><strong>Qualification :</strong> B.Tech</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>            
+            </div>        
         </div>
     </section>
 

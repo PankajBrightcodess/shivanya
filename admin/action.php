@@ -88,6 +88,7 @@ if(isset($_POST['add_center'])){
 	}
 	
 	if(isset($_POST['del_center'])){
+		
 	$id = $_POST['id'];	
 	$query="DELETE FROM `sh_addcenter` WHERE `id`='$id'";
 	$sql=mysqli_query($conn,$query);

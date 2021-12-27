@@ -54,8 +54,8 @@
                 <h2>
                     <a href="centrelogin.php" class="btn btn-warning blink"><strong>Centre Login</strong></a>
                     <a href="centerlist.php" class="btn btn-warning blink"><strong>Centre List</strong></a>
-                    <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink"><strong>New Centre Enquiry</strong></a>
-                    <a href="results.php" class="btn btn-warning blink"><strong>Results</strong></a>
+                    <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink"><strong>Apply For New Centre Enquiry</strong></a>
+                    <!-- <a href="results.php" class="btn btn-warning blink"><strong>Results</strong></a> -->
                     
                 </h2>
             </div>
@@ -68,7 +68,7 @@
     	<div class="row">
             <div class="col-md-6 col-lg-4">
               <div class="news">
-                <h2>Enquiry for Academy</h2>
+                <h2>Enquiry for New Franchise</h2>
                 <form action="sendmail.php" method="post" enctype="multipart/form-data" onsubmit="window.alert('Thanks for your Message!')">
                   <input type="text" name="name" placeholder="Name :" class="form-control py-2 my-3" required="">
                   <input type="tel" maxlength="10" name="contact" placeholder="Contact :" class="form-control py-2 mb-3" required="">
@@ -134,8 +134,8 @@
 <section class="testimonial">
 	<div class="container">
     	<div class="row">
-                    <div class="col-lg-6">
-                <div class="card bg-danger">
+                    <div class="col-lg-6" >
+                <div class="card bg-danger" style="height:410px">
                     <div class=" card-header"><h2>Testimonial</h2></div>
                     <div class="card-body">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -146,34 +146,34 @@
                           </ol>-->
                           <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="testi-pic"><img src="images/successful-students/08.jfif" alt="testimonial" class="img-fluid img-circle"></div>
-                                <p>"This was my first time taking a course in this format and it far exceeded my expectations." </p>
+                                <!-- <div class="testi-pic"><img src="images/successful-students/08.jfif" alt="testimonial" class="img-fluid img-circle"></div> -->
+                                <div class="testi-pic"><h5>"This was my first time taking a course in this format and it far exceeded my expectations." </h5></div>
                             </div>
                             <div class="carousel-item">
-                                <div class="testi-pic"><img src="images/successful-students/03.jfif" alt="testimonial"></div>
-                                <p>"I came to the class already with some knowledge of the program, but learned a good deal more thanks to your class."</p>
+                                <!-- <div class="testi-pic"><img src="images/successful-students/03.jfif" alt="testimonial"></div> -->
+                                <div class="testi-pic"><h5>"I came to the class already with some knowledge of the program, but learned a good deal more thanks to your class."</h5></div>
                             </div>
                             <div class="carousel-item">
-                                <div class="testi-pic"><img src="images/successful-students/07.jfif" alt="testimonial"></div>
-                                <p>"The class is awesome! The instructor spoke very clear and was very knowledgeable and patient."</p>
+                                <!-- <div class="testi-pic"><img src="images/successful-students/07.jfif" alt="testimonial"></div> -->
+                                <div class="testi-pic"><h5>"The class is awesome! The instructor spoke very clear and was very knowledgeable and patient."</h5></div>
                             </div>
                           </div>
                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
+                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                            <span class="sr-only"></span>
                           </a>
                           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
+                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                            <span class="sr-only"></span>
                           </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="box-shadow: 5px 10px 8px #888888; background: #DDD8DA;">
             <h2 class="text-danger">Why Choose Us?</h2><hr class="border-light">
-                <ul>
+                <ul style="font-size: 15px; font-weight: 600;">
                     <li><i class="fas fa-pencil-alt"></i>&nbsp; Highly Effective system of teachings.</li>
                     <li><i class="fas fa-pencil-alt"></i>&nbsp; Equiped with latest assignments.</li>
                     <li><i class="fas fa-pencil-alt"></i>&nbsp; Special attention for weak students.</li>

@@ -102,7 +102,7 @@ while ($data=mysqli_fetch_assoc($run)) {
                           <td><?php echo $centerlist['email']; ?></td>
                           <td><?php echo $centerlist['password']; ?></td>
                           <td><a href="update_news.php?id=<?php echo $centerlist['id']; ?>"><i class="fa fa-edit btn btn-sm btn-success"></i></a>
-                          <a class="del" data-id="<?php echo $centerlist['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
+                          <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $centerlist['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
                         </tr>  
                         <?php } ?>
                       </tbody>
@@ -118,23 +118,45 @@ while ($data=mysqli_fetch_assoc($run)) {
   </section>
 </body>
 <?php include 'footer-links.php'; ?>
-<script>
-   $("body").on("click",".del",function(){
-      debugger;
-      var id=$(this).attr('data-id');
-      if (confirm('You want to delete !!!')) {
+<script type="text/javascript">
+   // $("body").on("click",".del",function(){
+   //    debugger;
+   //    var id=$(this).attr('data-id');
+   //    if (confirm('You want to delete !!!')) {
+   //      $.ajax({
+   //        url:"action.php",
+   //        type:"POST",
+   //        data:{id:id,del_center:'del_center'},
+   //        success: function(data){
+   //          location.reload();
+   //        }
+   //      });
+   //    }
+   //    else{
+   //      alert('Record Deletion Cancel!');
+   //    }
+   //  });
+
+    $('.delete').click(function(e){
+        debugger;
+        // var id=$(this).closest('tr').find('.delete').val();
+         var id=$(this).attr('data-id');
+        if(confirm('Are you Sure !')){
         $.ajax({
-          url:"action.php",
-          type:"POST",
-          data:{id:id,del_center:'del_center'},
-          success: function(data){
-            location.reload();
-          }
+                type:'POST',
+                url:'action.php',
+               data:{id:id,del_center:'del_center'},
+                success: function(result){
+                    alert(result);
+                    console.log(result);
+                    location.reload();
+                    },
+                    error: function(){
+                    alert("error");
+                    },
         });
-      }
-      else{
-        alert('Record Deletion Cancel!');
-      }
+    }
+    return false;
     });
   $(document).ready(function(){
     $('#datatable').DataTable();
@@ -210,10 +232,6 @@ let editor;
 
 
   });
-
-
-
-
 
 </script>
 </html>
