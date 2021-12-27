@@ -54,7 +54,7 @@
                 <h2>
                     <a href="centrelogin.php" class="btn btn-warning blink"><strong>Centre Login</strong></a>
                     <a href="centerlist.php" class="btn btn-warning blink"><strong>Centre List</strong></a>
-                    <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink"><strong>Apply For New Centre Enquiry</strong></a>
+                    <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink"><strong>Apply For New Centre Franchise</strong></a>
                     <!-- <a href="results.php" class="btn btn-warning blink"><strong>Results</strong></a> -->
                     
                 </h2>
