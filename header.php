@@ -10,7 +10,7 @@
   	<div class="container">
     	<div class="row">
         	<div class="col-12 col-sm-6 col-md-4 col-lg-4"><div class="top-mail"><a href=""><i class="fas fa-envelope-open"></i>&nbsp; support@shivanyacomputer.com</a></div></div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-5"><div class="top-contacts"><a href=""><i class="fas fa-phone-volume"></i>&nbsp; +91 - 9852528104 ,support : 8340534016</a> </div></div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-5"><div class="top-contacts"><a href=""><i class="fas fa-phone-volume"></i>&nbsp; +91 - 9852528104, +91 - 8340534016</a> </div></div>
             <div class="col-6 col-sm-12 col-md-2 col-lg-3">
                 <div class="top-social-icons">
                     <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
