@@ -13,7 +13,7 @@
     <section class="pages" id="faculty">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12"><h2 class="text-center">Faculty</h2><hr class="w-50"></div>
+                <div class="col-lg-12"><h2 class="text-center">Faculty</h2><hr class="w-50 border-warning"></div>
             </div>
             <div class="row">
                     <div class="col-md-4">

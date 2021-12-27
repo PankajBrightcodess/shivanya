@@ -14,7 +14,7 @@
 <section class="pages">
         <div class="container">
             <h2>Our Valuable Courses</h2>
-            <hr>
+            <hr class="border-warning">
             <div class="row course">
                 <div class="col-md-12">
                     <h5 >12 Months Courses</h5>
