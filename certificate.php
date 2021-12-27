@@ -17,7 +17,7 @@
                 <div class="row my-img">
                             <div class="col-md-3 mb-3">
                                     <a href="#"  data-toggle="modal" data-target="#myModal">
-                                      <img src="images/certificate/cer01.jpeg" id="img1" class="showimg" width="100%">
+                                      <img src="images/certificate/cer01.jpeg" id="img1" class=" showimg avoid-click" width="100%">
                                     </a>
                                 </div>
                                 <div class="col-md-3 my-img mb-3">
@@ -118,7 +118,7 @@
 			$('.showimg').on('click', function() {
 				$("#showImg").empty();
 				var image = $(this).attr("src");
-				$("#showImg").html("<img class='img-responsive' width='100%' src='" + image + " ' />")
+				$("#showImg").html("<img class='img-responsive avoid-click' width='100%' src='" + image + " ' />")
 			})
 		});
     </script>

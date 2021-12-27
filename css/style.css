@@ -10,9 +10,9 @@ font-family: 'Roboto', sans-serif;
     user-select: none;
   
 }
-/*.avoid-click{
+.avoid-click{
     pointer-events: none;
-}*/
+}
 
 h1{
 }
