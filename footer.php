@@ -26,7 +26,7 @@
                 <p>An ISO 9001:2015 Certified institute</p>
                 <p><span>Training Enquiry No. :</span><a href="tel:09852528104"  title="09852528104"> (+91) - 9852528104</a></p>
                 <p><span>Another Contact No. :</span><a href="tel:08340534016"  title="08340534016"> (+91) - 8340534016</a></p>
-                <p><span>Email : </span><a href="">shivanyacomputereducation@gmail.com</a></p>
+                <p><span>Email : </span><a href="">support@gmail.com</a></p>
                 <div class="social">
                     <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>

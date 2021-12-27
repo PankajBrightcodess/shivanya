@@ -35,8 +35,10 @@
                 <p>SHIVANYA COMPUTER EDUCATION PRIVATE LIMITED</p>
                 <p>ADARSH CO OPERATIVE , SHOPPING CENTRE , SHOP NO - 24 , BOKARO</p>
                 <p>Bokaro – 827012 (Jharkhand)</p>
+               <p><span>Training Enquiry No. :</span><a href="tel:09852528104"  title="09852528104"> (+91) - 9852528104</a></p>
+                <p><span>Another Contact No. :</span><a href="tel:08340534016"  title="08340534016"> (+91) - 8340534016</a></p>
                 <p><strong><i class="fab fa-whatsapp text-success"></i></strong> <a href="tel:09703427163"  title="09703427163">+91 - 9852528104, </a></p>
-                <p><strong><i class="fas fa-envelope text-success"></i></strong> <a href="shivanyacomputereducation@gmail.com">shivanyacomputereducation@gmail.com</a></p>
+                <p><strong><i class="fas fa-envelope text-success"></i></strong> <a href="support@gmail.com">support@gmail.com</a></p>
                 <p><strong><i class="fas fa-globe text-success"></i></strong> <a href="https://shivanyacomputer.com/">www.shivanyacomputer.com</a></p>
             </div>
             <div class="col-md-12">
