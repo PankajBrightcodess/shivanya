@@ -100,18 +100,18 @@
                 <div class="col-md-12">
                   <h2>Our Successful Students</h2><hr class="w-50 mb-5 border-warning">
                    <div class="customer-logos slider">
-                    <div class="slide"><a href="#"><img src="images/successful-students/01.jfif" alt="successful-students" class="w-100"></a></div>
+                    <!-- <div class="slide"><a href="#"><img src="images/successful-students/01.jfif" alt="successful-students" class="w-100"></a></div> -->
                       
                       
                        <!-- <div class="slide"><a href="#"><img src="images/successful-students/ss9.jpg" alt="successful-students" class="w-100"></a></div> -->
                       
-                       <div class="slide"><a href="#"><img src="images/successful-students/03.jfif" alt="successful-students" class="w-100"></a></div>
+                     <!--   <div class="slide"><a href="#"><img src="images/successful-students/03.jfif" alt="successful-students" class="w-100"></a></div>
                       <div class="slide"><a href="#"><img src="images/successful-students/04.jfif" alt="successful-students" class="w-100"></a></div>
                       <div class="slide"><a href="#"><img src="images/successful-students/02.jfif" alt="successful-students" class="w-100"></a></div>
                       <div class="slide"><a href="#"><img src="images/successful-students/05.jfif" alt="successful-students" class="w-100"></a></div>
                         <div class="slide"><a href="#"><img src="images/successful-students/08.jfif" alt="successful-students" class="w-100"></a></div>
                       <div class="slide"><a href="#"><img src="images/successful-students/06.jfif" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/07.jfif" alt="successful-students" class="w-100"></a></div>
+                      <div class="slide"><a href="#"><img src="images/successful-students/07.jfif" alt="successful-students" class="w-100"></a></div> -->
                     
                       <!-- <div class="slide"><a href="#"><img src="images/successful-students/09.jfif" alt="successful-students" class="w-100"></a></div> -->
                        <!--  <div class="slide"><a href="#"><img src="images/successful-students/ss10.jfif" alt="successful-students" class="w-100"></a></div>
