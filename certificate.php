@@ -16,23 +16,23 @@
         <!-- 1 -->
                 <div class="row my-img">
                             <div class="col-md-3 mb-3">
-                                    <a href="#"  data-toggle="modal" data-target="#myModal">
-                                      <img src="images/certificate/cer01.jpeg" id="img1" class=" showimg avoid-click" width="100%">
+                                    <a href="#"  >  <!-- data-toggle="modal" data-target="#myModal" -->
+                                      <img src="images/certificate/cer01.jpeg" id="img1" class=" avoid-click" width="100%">   <!-- showimg -->
                                     </a>
                                 </div>
                                 <div class="col-md-3 my-img mb-3">
-                                    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                                      <img src="images/certificate/cer02.jpeg" id="img2" class="img-responsive showimg" width="100%">
+                                    <a href="#" id="link1">   <!-- data-toggle="modal" data-target="#myModal" -->
+                                      <img src="images/certificate/cer02.jpeg" id="img2" class=" avoid-click" width="100%"> <!-- img-responsive showimg -->
                                     </a>
                                 </div>
                                 <div class="col-md-3 my-img mb-3">
-                                    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                                      <img src="images/certificate/cer03.jpeg" id="img3" class="img-responsive showimg" width="100%">
+                                    <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
+                                      <img src="images/certificate/cer03.jpeg" id="img3" class="img-responsive showimg avoid-click" width="100%">
                                     </a>
                                 </div>
                                 <div class="col-md-3 my-img mb-3">
-                                  <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                                     <img src="images/certificate/cer08.jpeg" id="img4" class="img-responsive showimg" width="100%">
+                                  <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
+                                     <img src="images/certificate/cer08.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
                                   </a>  
                                </div> 
                                  
@@ -42,35 +42,35 @@
            
                   <div class="row my-img">
                         <div class="col-md-4 my-img mb-3">
-                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                              <img src="images/certificate/cer07.jpeg" id="img4" class="img-responsive showimg" width="100%">
+                            <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
+                              <img src="images/certificate/cer07.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
                             </a>  
                         </div> 
                         <div class="col-md-4 my-img mb-3">
-                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                              <img src="images/certificate/cer09.jpeg" id="img4" class="img-responsive showimg" width="100%">
+                            <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
+                              <img src="images/certificate/cer09.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
                             </a>  
                         </div> 
                         <div class="col-md-4 my-img mb-3">
-                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                              <img src="images/certificate/cer10.jpeg" id="img4" class="img-responsive showimg" width="100%">
+                            <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
+                              <img src="images/certificate/cer10.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
                             </a>  
                         </div> 
                   </div>
                    <div class="row my-img">
                         <div class="col-md-4 my-img mb-3">
-                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                              <img src="images/certificate/cer06.jpeg" id="img4" class="img-responsive showimg" width="100%">
+                            <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
+                              <img src="images/certificate/cer06.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
                             </a>  
                         </div> 
                         <div class="col-md-4 my-img mb-3">
-                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                              <img src="images/certificate/cer11.jpeg" id="img4" class="img-responsive showimg" width="100%">
+                            <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
+                              <img src="images/certificate/cer11.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
                             </a>  
                         </div> 
                         <div class="col-md-4 my-img mb-3">
-                            <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-                              <img src="images/certificate/cer12.jpeg" id="img4" class="img-responsive showimg" width="100%">
+                            <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
+                              <img src="images/certificate/cer12.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
                             </a>  
                         </div> 
                   </div>
