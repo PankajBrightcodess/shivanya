@@ -68,9 +68,6 @@ while ($data=mysqli_fetch_assoc($run)) {
                               <td><?php echo $uploadresult['cent_name']; ?></td>
                               <?php
                             }
-                            else{
-                              ?> <td>Admin</td><?php
-                            }
 
 
 
