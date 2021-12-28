@@ -13,7 +13,8 @@ $msg = "";
     header('location:index.php');
   }
   // $id = $_SESSION['id'];
-$query="SELECT * FROM `result`";
+$query="SELECT result.*, sh_addcenter.cent_name FROM `result` LEFT JOIN `sh_addcenter`
+ON result.center_id = sh_addcenter.id ";
 $run=mysqli_query($conn,$query);
 while ($data=mysqli_fetch_assoc($run)) {
   $list[]=$data;
@@ -49,6 +50,7 @@ while ($data=mysqli_fetch_assoc($run)) {
                           <th>#</th>
                           <th>Enorll No</th>
                           <th>Course</th>
+                          <th>Center</th>
                           <th>Student's Name</th>
                           <th>Result</th>
                           <!-- <th>Action</th> -->
@@ -60,6 +62,20 @@ while ($data=mysqli_fetch_assoc($run)) {
                           <td><?php echo $i; ?></td>
                           <td><?php echo $uploadresult['enroll']; ?></td>
                           <td><?php echo $uploadresult['course']; ?></td>
+                          <?php
+                            if(!empty($uploadresult['cent_name'])){
+                              ?>
+                              <td><?php echo $uploadresult['cent_name']; ?></td>
+                              <?php
+                            }
+                            else{
+                              ?> <td>Admin</td><?php
+                            }
+
+
+
+                          ?>
+                          
                           <td><?php echo $uploadresult['name']; ?></td>
                           <td><img src="../upload/<?php echo $uploadresult['upload_image']; ?>" height="100" width="100" class="img-fluid"></td>
               <!--             <td>
