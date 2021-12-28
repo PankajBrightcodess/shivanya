@@ -68,13 +68,13 @@
     	<div class="row">
             <div class="col-md-6 col-lg-4">
               <div class="news">
-                <h2>Apply for New Franchise</h2>
+                <h2>Enquiry for New Franchise</h2>
                 <form action="sendmail.php" method="post" enctype="multipart/form-data" onsubmit="window.alert('Thanks for your Message!')">
                   <input type="text" name="name" placeholder="Name :" class="form-control py-2 my-3" required="">
                   <input type="tel" maxlength="10" name="contact" placeholder="Contact :" class="form-control py-2 mb-3" required="">
                   <input type="email" name="email" placeholder="Email :" class="form-control py-2 mb-3" required="">
                   <textarea name="query" placeholder="Message :" class="form-control py-2 mb-3" required style="min-height:75px;"></textarea>
-                  <button type="submit" class="my-2 btn btn-success btn-block" name="SendMessage">Send Franchise</button>
+                  <button type="submit" class="my-2 btn btn-success btn-block" name="SendMessage">Send</button>
                   </form>
               </div>
             </div>

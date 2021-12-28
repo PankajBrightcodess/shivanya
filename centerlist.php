@@ -78,17 +78,17 @@
                            <td>ST-987, Ranchi road, Dhanbad 8245006 Jharkhand</td>
                            <td>******4917</td></tr>
 
-                           <tr><td>9.</td>
+                        <tr><td>9.</td>
                            <td>SCE0009</td>
                            <td> VIJAY COMPUTER INSTITUTE</td>
                            <td>762-BS,Near SO office, Khalari ranchi 827305 Jharkhand</td>
                            <td>******4910</td></tr>
 
-                           <tr><td>10.</td>
-                           <td>SCE0010</td>
-                           <td>INSTITUTE OF YOUNG ENGINEERS</td>
-                           <td>AV87-12,Near Durga Printers,Ratu ranchi 824570 Jharkhand</td>
-                           <td>******3017</td></tr>
+                        <tr><td>10.</td>
+                             <td>SCE0010</td>
+                             <td>INSTITUTE OF YOUNG ENGINEERS</td>
+                             <td>AV87-12,Near Durga Printers,Ratu ranchi 824570 Jharkhand</td>
+                             <td>******3017</td></tr>
                    </tbody>
                </table> 
                </div>

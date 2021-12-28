@@ -16,7 +16,7 @@
         <form method="post" action="">
        <div class="row enqueryform">
         <div class="col-lg-12 col-12 mb-3">
-            <h2>New Centre Enquiry Form</h2>
+            <h2>New Centre Franchise Form</h2>
         </div>
         <div class="col-md-6 col-12 mb-2">
             <label>Name<span style="color: Red;">*</span></label>

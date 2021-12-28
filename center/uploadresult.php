@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include_once('connection.php');
+include_once('../admin/connection.php');
 $msg = "";
   if (isset($_SESSION['msg'])) {
     $msg=$_SESSION['msg'];
@@ -9,10 +9,11 @@ $msg = "";
   if ($msg != "") {
     echo "<script> alert('$msg') </script>";
   }
-  if($_SESSION['role']!='1'){
+  if($_SESSION['role']!='2'){
     header('location:index.php');
   }
-$query="SELECT * FROM `sh_addcenter` WHERE `status`='1'";
+  $id = $_SESSION['id'];
+$query="SELECT * FROM `result` WHERE `center_id`=$id";
 $run=mysqli_query($conn,$query);
 while ($data=mysqli_fetch_assoc($run)) {
   $center[]=$data;
@@ -25,8 +26,8 @@ while ($data=mysqli_fetch_assoc($run)) {
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <?php include 'header-links.php'; ?>
-  <title>ADD Center |  Shivanya </title>
+  <?php include '../admin/header-links.php'; ?>
+  <title>ADD Result |  Shivanya </title>
 </head>
 <body>
   <?php include 'menu.php'; ?>
@@ -35,81 +36,63 @@ while ($data=mysqli_fetch_assoc($run)) {
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header bg-secondary text-light"><h4>Add Center</h4></div>
+            <div class="card-header bg-secondary text-light"><h4>Add Result</h4></div>
             <div class="card-body">
               <div class="row">
-                <div class="col-md-4">
-                  <form action="action.php" method="POST" enctype="multipart/form-data">
-                     <div class="form-group row">
-                         <div class="col-sm-12 mb-3">
-                          <label class="label">Center Code</label>
-                         <input type="text" class="form-control" name="cent_code" placeholder="Enter Center Code">
-                          </div> 
-                          <div class="col-sm-12 mb-3">
-                            <label class="label">Center Name</label>
-                           <input type="text" class="form-control" name="cent_name" placeholder="Enter Center Name">
-                          </div> 
-                          <div class="col-sm-12 mb-3">
-                            <label class="label">Address</label>
-                            <textarea class="form-control" name="address" rows="3" col="12"></textarea>
-                          </div>   
-                          <div class="col-sm-12 mb-3">
-                            <label class="label">Contact No.</label>
-                            <input type="text" class="form-control" name="mobile" placeholder="Enter Center Name">
-                          </div>                                
-                          <div class="col-sm-12 mb-3">
-                            <label class="label">Email</label>
-                            <input type="mail" class="form-control" name="mail" placeholder="Enter Email">
-                          </div>
-                             <div class="col-sm-12 mb-3">
-                            <label class="label">Password</label>
-                            <input type="text" class="form-control" name="pass" placeholder="Enter Password">
-                          </div>
-                          <div class="col-sm-12 mb-3">
-                            <label class="label">Role</label>
-                            <select name="role" class="form-control">
-                              <option >---Select---</option>
-                              <option value="2">Center</option>
-                            </select>
-                          </div>
-                      </div>
-                    <input type="submit" name="add_center" class="btn btn-success btn-sm" value="Submit">
-                  </form> 
-                </div>
-                <div class="col-md-8">
-                  <div class="table-responsive">
-                    <table id="datatable" class="table table-hovered table-bordered">
+               <div class="col-md-5">
+					<!-- <div class="col-md-12 dashboard mb-3">
+						<h1 style="color:#403226; margin-top: 2rem; text-align: center;"><?php print_r($_SESSION['id'])?></h1>
+					</div> -->
+					<form method="POST" action="action.php" enctype="multipart/form-data"> 
+						<div class="col-md-12">
+							<label>Enroll. No. </label>
+							<input type="text" name="enroll" class="form-control">
+						</div>
+						<div class="col-md-12 mb-3">
+							<label>Course </label>
+							<input type="text" name="course" class="form-control">
+						</div>
+						<div class="col-md-12 mb-3">
+							<label>Name </label>
+							<input type="text" name="name" class="form-control">
+							<input type="hidden" name="center_id" value="<?php echo $_SESSION['id']?>" class="form-control">
+						</div>
+						<div class="col-md-12 mb-3">
+							<label>Upload Result </label>
+							<input type="file" name="upload_image" class="form-control">
+						</div>
+						<div class="col-md-12">
+							<input type="submit" name="resultupload" class="btn btn-sm btn-success">
+						</div>
+					</form>
+					
+				</div>
+				<div class="col-md-7">
+               		<table id="datatable" class="table table-hovered table-bordered">
                       <thead>
                         <tr class="bg-dark text-light">
                           <th>#</th>
-                          <th>Center Code</th>
-                          <th>Center Name</th>
-                          <th>Address</th>
-                          <th>Contact No.</th>
-                          <th>Email</th>
-                          <th>Password</th>
+                          <th>Enorll No</th>
+                          <th>Course</th>
+                          <th>Student's Name</th>
+                          <th>Result</th>
                           <th>Action</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <?php $i=0; foreach ($center as $centerlist) { ++$i; ?>
+                        <?php $i=0; foreach ($center as $uploadresult) { ++$i; ?>
                         <tr>
                           <td><?php echo $i; ?></td>
-                          <td><?php echo $centerlist['cent_code']; ?></td>
-                          <td><?php echo $centerlist['cent_name']; ?></td>
-                          <td><?php echo $centerlist['address']; ?></td>
-                          <td><?php echo $centerlist['mobile']; ?></td>
-                          <td><?php echo $centerlist['email']; ?></td>
-                          <td><?php echo $centerlist['password']; ?></td>
+                          <td><?php echo $uploadresult['enroll']; ?></td>
+                          <td><?php echo $uploadresult['course']; ?></td>
+                          <td><?php echo $uploadresult['name']; ?></td>
+                          <td><img src="../upload/<?php echo $uploadresult['upload_image']; ?>" height="100" width="100" class="img-fluid"></td>
                           <td>
-                    <button type="button" class="btn btn-success btn-xs updt" data-toggle="modal" data-id="<?php echo $centerlist['id'];?>" data-cent_code="<?php echo $centerlist['cent_code'];?>" data-cent_name="<?php echo $centerlist['cent_name'];?>" data-address="<?php echo $centerlist['address'];?>" data-mobile="<?php echo $centerlist['mobile'];?>"  data-email="<?php echo $centerlist['email'];?>" data-password="<?php echo $centerlist['password'];?>"  data-target=".bd-example-modal-lg"><i class="fa fa-edit"></i></button> 
-                      <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $centerlist['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
+                             <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $uploadresult['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
                         </tr>  
                         <?php } ?>
                       </tbody>
                     </table>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -180,7 +163,7 @@ while ($data=mysqli_fetch_assoc($run)) {
 </div>
 <!-- --------------------------------------------Modal End------------------------------------------- -->
 </body>
-<?php include 'footer-links.php'; ?>
+<?php include '../admin/footer-links.php'; ?>
 <script type="text/javascript">
    
 
@@ -211,15 +194,14 @@ while ($data=mysqli_fetch_assoc($run)) {
         $.ajax({
                 type:'POST',
                 url:'action.php',
-               data:{id:id,del_center:'del_center'},
+               data:{id:id,del_result:'del_result'},
                 success: function(result){
-                    alert(result);
+                    // alert(result);
                     console.log(result);
                     location.reload();
                     },
-
-                    error: function(){ 
-                       alert("error");
+                    error: function(){
+                    alert("error");
                     },
         });
     }

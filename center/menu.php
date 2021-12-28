@@ -15,13 +15,12 @@ error_reporting(0);
 				<li class="nav-item">
 					<a class="nav-link <?php if($pg=="dashboard"){ echo "active"; } ?>" href="dashboard.php">Dashboard <span class="sr-only">(current)</span></a>
 				</li>
-				 <li class="nav-item dropdown">
+				 <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="" id="AboutVEWT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Center</a>
           <div class="dropdown-menu" aria-labelledby="AboutVEWT">
-          	 <a class="dropdown-item" href="add_center.php">Add Center</a>
-            <!-- <a class="dropdown-item" href="add_gallery.php">Center List</a> -->
+          	 <a class="dropdown-item" href="">Upload Result</a>
           </div>
-         </li>
+         </li> -->
 
         <!--  <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="" id="AboutVEWT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Staff</a>
@@ -33,16 +32,9 @@ error_reporting(0);
             <a class="dropdown-item" href="add_non_teaching.php">Add Non-Teaching</a>
           </div>
          </li> -->
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="" id="AboutVEWT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Result</a>
-          <div class="dropdown-menu" aria-labelledby="AboutVEWT">
-          	 <a class="dropdown-item" href="result.php">Add Result</a>
-            <a class="dropdown-item" href="alllist.php">All Result List</a>
-          </div>
-         </li>
-			 <!-- 	<li class="nav-item">
-					<a class="nav-link <?php if($pg=="add_banner"){ echo "active";} ?>" href="result.php">Add Result</a>
-				</li> -->
+			 	<li class="nav-item">
+					<a class="nav-link <?php if($pg=="add_banner"){ echo "active";} ?>" href="uploadresult.php">Upload Result</a>
+				</li>
 				<!--<li class="nav-item">
 					<a class="nav-link <?php if($pg=="add_gallery"){ echo "active";} ?>" href="add_gallery.php">Add Gallery</a>
 				</li> -->

@@ -24,7 +24,7 @@
                 <p>ADARSH CO OPERATIVE , SHOPPING CENTRE , SHOP NO - 24 , BOKARO</p>
                 <p>Bokaro – 827012(Jharkhand)</p>
                 <p>An ISO 9001:2015 Certified institute</p>
-                <p><span>Training Enquiry No. :</span><a href="tel:09852528104"  title="09852528104"> (+91) - 9852528104</a></p>
+                <p><span>Enquiry No. :</span><a href="tel:09852528104"  title="09852528104"> (+91) - 9852528104</a></p>
                 <p><span>Support No. :</span><a href="tel:08340534016"  title="08340534016"> (+91) - 8340534016</a></p>
                 <p><span>Email : </span><a href="">support@shivanyacomputer.com</a></p>
                 <div class="social">
