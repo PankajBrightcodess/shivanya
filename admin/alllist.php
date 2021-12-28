@@ -19,8 +19,8 @@ $run=mysqli_query($conn,$query);
 while ($data=mysqli_fetch_assoc($run)) {
   $list[]=$data;
 }
-// echo '<pre>';
-// print_r($list);die;
+echo '<pre>';
+print_r($list);die;
 ?>
 
 <!DOCTYPE html>
