@@ -9,9 +9,7 @@ session_start();
   if ($msg != "") {
     echo "<script> alert('$msg') </script>";
   }
-  if($_SESSION['role']!='1'){
-    header('location:index.php');
-  }
+  
   $id= $_SESSION['enroll'];
   $query="SELECT * FROM `result` WHERE `enroll`='$id'";
   $run=mysqli_query($conn,$query);
