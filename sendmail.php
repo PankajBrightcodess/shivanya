@@ -36,8 +36,8 @@ include 'admin/connection.php';
 
 
 if(isset($_POST['feedback'])){
-	echo '<pre>';
-   	print_r($_POST);die;
+	// echo '<pre>';
+ //   	print_r($_POST);die;
 	    $to="support@shivanyacomputer.com";  
 	    $name = $_POST['name'];
 	    $mobile = $_POST['contact'];
