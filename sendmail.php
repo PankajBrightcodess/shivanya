@@ -80,7 +80,7 @@ if(isset($_POST['contactus'])){
 	    $selectedProjects  = 'None';
 	    
 	    $body = 'Shivanya Computer Education(Contact Us): ' . $selectedProjects;
-	    $subject = "Regarding Contact Inquiry";
+	    $subject = "Regarding Contact Enquiry";
 	    $from = $email;
 	    $message = "Name: ".$name."\n Mobile: ".$mobile."\n E-mail: ".$email."\n".$body."\n Comment: ".$comment;
 	    $headers = "MIME-Version: 1.0" . "\r\n";
