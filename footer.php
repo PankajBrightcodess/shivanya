@@ -38,11 +38,11 @@
             <div class="col-12 col-md-3">
                 <div>
                     <h3>Feedback</h3><hr class="border-light">
-                        <form action="#">
+                        <form action="sendmail.php" method="post">
                             <input type="text" name="name" placeholder="Name :" class="form-control" required>
                             <input type="tel" name="contact" placeholder="Contact :" class="form-control" required>
                             <textarea name="message" placeholder="Message :" class="form-control" required></textarea>
-                            <button type="submit" class="btn btn-success btn-block">Send</button>
+                            <button type="submit" name="feedback" class="btn btn-success btn-block">Send</button>
                         </form>
                 </div>
             </div>
