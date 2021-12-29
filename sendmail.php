@@ -69,8 +69,8 @@ if(isset($_POST['feedback'])){
 
 // ''''''''''''''''''''''''''''''''''''''contact no''''''''''''''''''''''''''''''''''''''''''''
 if(isset($_POST['contactus'])){
-	   // echo '<pre>';
-   	// print_r($_POST);die;
+	   echo '<pre>';
+   	print_r($_POST);die;
 	    $to="pankaj.tiwari@brightcodess.com";   
 	    // /support@shivanyacomputer.com/ 
 	    $name = $_POST['name'];
