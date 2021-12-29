@@ -38,7 +38,7 @@ session_start();
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header bg-secondary text-light"><h4>New Centre Franchise List</h4></div>
+            <div class="card-header bg-secondary text-light"><h4>New Admission Enquiry List</h4></div>
             <div class="card-body">
               <div class="row">
   				     <div class="col-md-12">
