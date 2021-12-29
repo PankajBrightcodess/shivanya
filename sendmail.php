@@ -36,12 +36,13 @@ include 'admin/connection.php';
 
 
 if(isset($_POST['feedback'])){
+	echo '<pre>';
    	print_r($_POST);die;
 	    $to="support@shivanyacomputer.com";  
 	    $name = $_POST['name'];
 	    $mobile = $_POST['contact'];
 	    $email = $_POST['email'];
-	    $comment = $_POST['query'];
+	    $comment = $_POST['message'];
 	    $selectedProjects  = 'None';
 	    
 	    $body = 'Shivanya Computer Education: ' . $selectedProjects;
