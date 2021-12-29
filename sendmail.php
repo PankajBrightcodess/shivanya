@@ -13,7 +13,7 @@ include 'admin/connection.php';
 	    $comment = $_POST['query'];
 	    $selectedProjects  = 'None';
 	    
-	    $body = 'Shivanya Computer Education: ' . $selectedProjects;
+	    $body = 'Shivanya Computer Education(Enquiry): ' . $selectedProjects;
 	    $subject = "Regarding Contact Inquiry";
 	    $from = $email;
 	    $message = "Name: ".$name."\n Mobile: ".$mobile."\n E-mail: ".$email."\n".$body."\n Comment: ".$comment;
@@ -46,7 +46,7 @@ if(isset($_POST['feedback'])){
 	    $comment = $_POST['message'];
 	    $selectedProjects  = 'None';
 	    
-	    $body = 'Shivanya Computer Education: ' . $selectedProjects;
+	    $body = 'Shivanya Computer Education(Feedback): ' . $selectedProjects;
 	    $subject = "Regarding Contact Inquiry";
 	    $from = $email;
 	    $message = "Name: ".$name."\n Mobile: ".$mobile."\n E-mail: ".$email."\n".$body."\n Comment: ".$comment;
@@ -69,8 +69,8 @@ if(isset($_POST['feedback'])){
 
 // ''''''''''''''''''''''''''''''''''''''contact no''''''''''''''''''''''''''''''''''''''''''''
 if(isset($_POST['contactus'])){
-	   echo '<pre>';
-   	print_r($_POST);die;
+	   // echo '<pre>';
+   	// print_r($_POST);die;
 	    $to="pankaj.tiwari@brightcodess.com";   
 	    // /support@shivanyacomputer.com/ 
 	    $name = $_POST['name'];
@@ -79,7 +79,7 @@ if(isset($_POST['contactus'])){
 	    $comment = $_POST['message'];
 	    $selectedProjects  = 'None';
 	    
-	    $body = 'Shivanya Computer Education: ' . $selectedProjects;
+	    $body = 'Shivanya Computer Education(Contact Us): ' . $selectedProjects;
 	    $subject = "Regarding Contact Inquiry";
 	    $from = $email;
 	    $message = "Name: ".$name."\n Mobile: ".$mobile."\n E-mail: ".$email."\n".$body."\n Comment: ".$comment;
