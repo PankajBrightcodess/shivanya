@@ -1,3 +1,26 @@
+<?php 
+session_start();
+  include_once('admin/connection.php');
+  $msg = "";
+  if (isset($_SESSION['msg'])) {
+    $msg=$_SESSION['msg'];
+    unset($_SESSION['msg']);
+  }
+  if ($msg != "") {
+    echo "<script> alert('$msg') </script>";
+  }
+  if($_SESSION['role']!='1'){
+    header('location:index.php');
+  }
+  $id= $_SESSION['enroll'];
+  $query="SELECT * FROM `result` WHERE `enroll`='$id'";
+  $run=mysqli_query($conn,$query);
+  while ($data=mysqli_fetch_assoc($run)) {
+    $center[]=$data;
+  }
+  // echo '<pre>';
+  // print_r();die;
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,13 +36,23 @@
    
 <section class="pages">
     <div class="container ">
-            <h2><center><u>Results</u></center></h2>
-            <form action="admin/action.php" method="post"> 
+            <h2><center><u>Student Details</u></center></h2>
              <div class="row all-center">
-               <div class="col-md-9 mb-3 md-12"><input type="text" name="enroll" placeholder="Enter Your Roll No." class="form-control"></div>
-               <div class="col-md-3 md-12"><input type="submit" class="btn btn-sm btn-success"  value="Submit" name="getresult"></div>      
+              <div class="col-md-8">
+                  <div class="row" style="border:1px">
+                      <div class="col-md-6 mb-3"><strong>Roll No:</strong> </div>
+                      <div class="col-md-6 mb-3"><?php echo $center[0]['enroll'];?></div>
+                      <div class="col-md-6 mb-3"><strong>Course: </strong> </div>
+                      <div class="col-md-6 mb-3"><?php echo $center[0]['course'];?>     </div>
+                      <div class="col-md-6 mb-3"><strong>Name: </strong> </div>
+                      <div class="col-md-6 mb-3"><?php echo $center[0]['name'];?></div>
+                  </div>
+              </div>     
+              <div class="col-md-4">
+                  <img src="upload/<?php echo $center[0]['upload_image']?>" height="200" width="200" class="img-fluid">
+              </div>     
             </div>
-          </form>
+             
 
 
         

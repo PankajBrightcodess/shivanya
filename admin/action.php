@@ -45,6 +45,7 @@ if(isset($_POST['login'])){
 		$data=mysqli_fetch_assoc($run);
 		$_SESSION['role'] = $data['role'];
 		$_SESSION['id'] = $data['id'];
+		$_SESSION['cent_id'] = $data['cent_id'];
 		if($_SESSION['role']==1){
 			header('location:dashboard.php');
 		}
@@ -57,6 +58,7 @@ if(isset($_POST['login'])){
 }
 
 if(isset($_POST['add_center'])){
+
 	$cent_code = $_POST['cent_code'];
 	$cent_name = $_POST['cent_name'];
 	$address = $_POST['address'];
@@ -200,34 +202,122 @@ if(isset($_POST['del_result_admin'])){
 	}
    }
 
+	if(isset($_POST['del_list'])){
+		
+	$id = $_POST['id'];	
+	// print_r($id);die;
+	$query="DELETE FROM `result` WHERE `id`='$id'";
+	$sql=mysqli_query($conn,$query);
+	
+   }
 
-   if(isset($_POST['contact_form'])){
-	    $to="info@sologix.in";
-	    $name = $_POST['name'];
-	    $state = $_POST['state'];
-	    $mobile = $_POST['mobile'];
-	    $district = $_POST['district'];
-	    $email = $_POST['email'];
-	    $city = $_POST['city'];
-	    $comment = $_POST['comment'];
-	    $selectedProjects  = 'None';
-	    if(isset($_POST['projects']) && is_array($_POST['projects']) && count($_POST['projects']) > 0){
-	        $selectedProjects = implode(', ', $_POST['projects']);
-	    }
-	    $body = 'Selected Solar: ' . $selectedProjects;
-	    $subject = "Regarding Contact Inquiry";
-	    $from = "info@sologix.com";
-	    $message = "Name: ".$name."\n Mobile: ".$mobile."\n State: ".$state."\n E-mail: ".$email."\n District ".$district."\n City: ".$city."\n".$body."\n Comment: ".$comment;
-	    $headers = "From:" . $from;
-	    if (mail($to, $subject, $message, $headers)) {
-	      echo "<script> alert('Sent Successfully!!'); </script>";
-	      header("location:$_SERVER[HTTP_REFERER]");
-	    }
-	    else {
-	      echo "<script> alert('Failed, Try Again!!'); </script>";
-	      header("location:$_SERVER[HTTP_REFERER]");
-	    }
-}
+   if(isset($_POST['del_franchise'])){
+		
+	$id = $_POST['id'];	
+	// print_r($id);die;
+	$query="DELETE FROM `centre_request` WHERE `id`='$id'";
+	$sql=mysqli_query($conn,$query);
+	
+   }
+
+
+
+   if(isset($_POST['center_request'])){
+	   	// echo '<pre>';
+	   	// print_r($_POST);die;
+	   	$name=$_POST['name'];
+		$gender=$_POST['gender'];
+		$dob=$_POST['dob'];
+		$mobile=$_POST['mobile']; 
+		$email=$_POST['email']; 
+		$location_address=$_POST['location']; 
+		$city=$_POST['city']; 
+		$state=$_POST['state']; 
+		$pin=$_POST['pincode']; 
+		$precenter=$_POST['precenter']; 
+		$languages=$_POST['language']; 
+		$otherinfo=$_POST['otherinfo']; 
+		$added_on=date('Y-m-d'); 
+		$query="INSERT INTO `centre_request`(`name`,`dob`,`gender`,`mobile`,`email`,`location`,`city`,`state`,`pincode`,`precenter`,`language`,`other_info`,`added_on`) VALUES ('$name','$dob','$gender','$mobile','$email','$location_address','$city','$state','$pin','$precenter','$languages','$otherinfo','$added_on')";
+			$sql=mysqli_query($conn,$query);
+			if($sql){
+				 header("Location:$_SERVER[HTTP_REFERER]");
+				$_SESSION['msg']="Successfully Added!!!";	
+			}
+			else{
+				$_SESSION['msg']="Not added result !!!";
+				header("Location:$_SERVER[HTTP_REFERER]");
+			}
+
+   }
+
+   if(isset($_POST['student_enquiry'])){
+   	// echo '<pre>';
+   	// print_r($_POST);die;
+   	    $name=$_POST['name'];
+		$mobile=$_POST['mobile'];
+		$email=$_POST['email'];
+		$ac_qualify=$_POST['ac_qualify']; 
+		$course=$_POST['course']; 
+		$mode=$_POST['mode']; 
+		$added_on = date('Y-m-d');
+		$query="INSERT INTO `admission_enquiry`(`name`,`mobile`,`email`,`academic_qualification`,`course`,`training_mode`,`added_on`) VALUES ('$name','$mobile','$email','$ac_qualify','$course','$mode','added_on')";
+			$sql=mysqli_query($conn,$query);
+			if($sql){
+				 header("Location:$_SERVER[HTTP_REFERER]");
+				$_SESSION['msg']="Successfully Added!!!";	
+			}
+			else{
+				$_SESSION['msg']="Not added result !!!";
+				header("Location:$_SERVER[HTTP_REFERER]");
+			}
+   }
+
+   if(isset($_POST['del_admission'])){
+		
+	$id = $_POST['id'];	
+	// print_r($id);die;
+	$query="DELETE FROM `admission_enquiry` WHERE `id`='$id'";
+	$sql=mysqli_query($conn,$query);
+	if($sql){
+		 header('Location:student_enquiry.php');
+		$_SESSION['msg']="Enquiry Deleted Successfully !!!";	
+	}
+	else{
+		$_SESSION['msg']="Enquiry Not Deleted!!!";
+		header("location:$_SERVER[HTTP_REFERER]");
+	}
+	
+   }
+
+   if(isset($_POST['getresult'])){
+   	// echo '<pre>';
+   	// print_r($_POST);die;
+   	$enroll = $_POST['enroll'];	
+   	$query="SELECT * FROM `result` WHERE `enroll`='$enroll'";
+	$run=mysqli_query($conn,$query);
+	$num=mysqli_num_rows($run);
+	if($num){
+		$data=mysqli_fetch_assoc($run);
+		$_SESSION['enroll'] = $data['enroll'];
+		
+		if(!empty($_SESSION['enroll'])){
+			header('location:../studentsDetails.php');
+		}
+			
+	}
+	else{
+		$_SESSION['msg']='Invalid details !!!';
+		header("Location: " . $_SERVER['HTTP_REFERER']);
+	}
+   }
+
+
+
+
+
+
+
 
    // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''Center Area Start'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 

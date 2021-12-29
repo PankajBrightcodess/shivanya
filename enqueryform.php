@@ -1,3 +1,16 @@
+<?php 
+session_start();
+  include_once('admin/connection.php');
+  $msg = "";
+  if (isset($_SESSION['msg'])) {
+    $msg=$_SESSION['msg'];
+    unset($_SESSION['msg']);
+  }
+  if ($msg != "") {
+    echo "<script> alert('$msg') </script>";
+  }
+  
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,7 +26,7 @@
    
 <section class="pages">
     <div class="container">
-        <form method="post" action="">
+        <form method="post" action="admin/action.php">
        <div class="row enqueryform">
         <div class="col-lg-12 col-12 mb-3">
             <h2>Student Admission Enquiry Form</h2>
@@ -24,15 +37,15 @@
         </div>
         <div class="col-md-6 col-12 mb-2">
             <label>Mobile<span style="color: Red;">*</span></label>
-            <input type="text" name="name" placeholder="Active Mobile Number" class="form-control" required>
+            <input type="text" name="mobile" placeholder="Active Mobile Number" class="form-control" required>
         </div>
         <div class="col-md-6 col-12 mb-2">
             <label>Email<span style="color: Red;">*</span></label>
-            <input type="mail" name="name" placeholder="Active Email" class="form-control" required>
+            <input type="mail" name="email" placeholder="Active Email" class="form-control" required>
         </div>
         <div class="col-md-6 col-12 mb-2">
             <label>Academic Qualification<span style="color: Red;">*</span></label>
-            <input type="text" name="name" placeholder="Enter Academic Qualification" class="form-control" required>
+            <input type="text" name="ac_qualify" placeholder="Enter Academic Qualification" class="form-control" required>
         </div>
         <div class="col-md-6 col-12  mb-5">
             <label>Course<span style="color: Red;">*</span></label>
@@ -66,7 +79,7 @@
         </div>
          <div class="col-md-6 col-12 mb-5">
             <label>Training Mode<span style="color: Red;">*</span></label>
-            <select class="form-control" name="course">
+            <select class="form-control" name="mode">
                 <option>---SELECT---</option>
                 <option value="ragular">Regular</option>
                 <option value="online">Online</option>
@@ -74,11 +87,11 @@
             </select>
         </div>
         <div class="col-md-4 col-4"></div>
-        <div class="col-md-4 col-4"><input type="submit" name="" class="btn btn-sm btn-success form-control" value="Submit"></div>
+        <div class="col-md-4 col-4"><input type="submit" name="student_enquiry" class="btn btn-sm btn-success form-control" value="Submit"></div>
         <div class="col-md-4 col-4"></div>
 
       </div> 
-      </form>
+   </form>
     </div>
 </section>
 <?php include"footer.php"; ?>

@@ -1,7 +1,7 @@
 <?php 
 session_start();
-include_once('connection.php');
-$msg = "";
+  include_once('../admin/connection.php');
+  $msg = "";
   if (isset($_SESSION['msg'])) {
     $msg=$_SESSION['msg'];
     unset($_SESSION['msg']);
@@ -12,15 +12,14 @@ $msg = "";
   if($_SESSION['role']!='1'){
     header('location:index.php');
   }
-  // $id = $_SESSION['id'];
-$query="SELECT result.*, sh_addcenter.cent_name FROM `result` LEFT JOIN `sh_addcenter`
-ON result.center_id = sh_addcenter.id ";
-$run=mysqli_query($conn,$query);
-while ($data=mysqli_fetch_assoc($run)) {
-  $list[]=$data;
-}
-// echo '<pre>';
-// print_r($list);die;
+  $id = $_SESSION['id'];
+  $query="SELECT * FROM `centre_request`";
+  $run=mysqli_query($conn,$query);
+  while ($data=mysqli_fetch_assoc($run)) {
+    $center[]=$data;
+  }
+  // echo '<pre>';
+  // print_r($center);die;
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +29,7 @@ while ($data=mysqli_fetch_assoc($run)) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php include '../admin/header-links.php'; ?>
-  <title>ADD Result |  Shivanya </title>
+  <title>New Center Request |  Shivanya </title>
 </head>
 <body>
   <?php include 'menu.php'; ?>
@@ -39,52 +38,55 @@ while ($data=mysqli_fetch_assoc($run)) {
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header bg-secondary text-light"><h4>Add Result</h4></div>
+            <div class="card-header bg-secondary text-light"><h4>New Centre Franchise List</h4></div>
             <div class="card-body">
               <div class="row">
-              
-				      <div class="col-md-12">
-               		<table id="datatable" class="table table-hovered table-bordered">
-                      <thead>
-                        <tr class="bg-dark text-light">
-                          <th>#</th>
-                          <th>Enorll No</th>
-                          <th>Course</th>
-                          <th>Center</th>
-                          <th>Student's Name</th>
-                          <th>Result</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <?php $i=0; foreach ($list as $uploadresult) { ++$i; ?>
-                        <tr>
-                          <td><?php echo $i; ?></td>
-                          <td><?php echo $uploadresult['enroll']; ?></td>
-                          <td><?php echo $uploadresult['course']; ?></td>
-                          <?php
-                            if(!empty($uploadresult['cent_name'])){
-                              ?>
-                              <td><?php echo $uploadresult['cent_name']; ?></td>
-                              <?php
-                            }
-                            else{
-                              ?> <td>Admin Center</td><?php
-                            }
-
-
-
-                          ?>
-                          
-                          <td><?php echo $uploadresult['name']; ?></td>
-                          <td><img src="../upload/<?php echo $uploadresult['upload_image']; ?>" height="100" width="100" class="img-fluid"></td>
-                           <td>
-                              <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $uploadresult['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td> 
-                        </tr>  
-                        <?php } ?>
+  				     <div class="col-md-12">
+                 		<table id="datatable" class="table table-hovered table-bordered">
+                        <thead>
+                          <tr class="bg-dark text-light">
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>DOB</th>
+                            <th>Mobile </th>
+                            <th>Email</th>
+                            <th>Location</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Pincode</th>
+                            <th>Pre Center</th>
+                            <th>Language</th>
+                            <th>Other Information</th>
+                            <th>Request date</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <?php $i=0; foreach ($center as $franchise) { ++$i; ?>
+                          <tr>
+                            <td><?php echo $i; ?></td>
+                            <td><?php echo $franchise['name']; ?></td>
+                            <td><?php echo $franchise['gender']; ?></td>
+                            <td><?php echo $franchise['dob']; ?></td>
+                            <td><?php echo $franchise['mobile']; ?></td>
+                            <td><?php echo $franchise['email']; ?></td>
+                            <td><?php echo $franchise['location']; ?></td>
+                            <td><?php echo $franchise['city']; ?></td>
+                            <td><?php echo $franchise['state']; ?></td>
+                            <td><?php echo $franchise['pincode']; ?></td>
+                            <td><?php echo $franchise['precenter']; ?></td>
+                            <td><?php echo $franchise['language']; ?></td>
+                            <td><?php echo $franchise['other_info']; ?></td>
+                            <td><?php echo $franchise['added_on']; ?></td>
+                            <td>
+                                <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $franchise['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a>
+                            </td>
+                          </tr>  
+                          <?php } ?>
                       </tbody>
-                    </table>
-              </div>
+                      </table>
+                </div>
             </div>
           </div>
         </div>
@@ -127,7 +129,7 @@ $('.delete').click(function(e){
         $.ajax({
                 type:'POST',
                 url:'action.php',
-               data:{id:id,del_list:'del_list'},
+               data:{id:id,del_franchise:'del_franchise'},
                 success: function(result){
                     // alert(result);
                     console.log(result);

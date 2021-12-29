@@ -12,7 +12,7 @@ $msg = "";
   if($_SESSION['role']!='2'){
     header('location:index.php');
   }
-  $id = $_SESSION['id'];
+  $id = $_SESSION['cent_id'];
 $query="SELECT * FROM `result` WHERE `center_id`=$id";
 $run=mysqli_query($conn,$query);
 while ($data=mysqli_fetch_assoc($run)) {
@@ -55,7 +55,7 @@ while ($data=mysqli_fetch_assoc($run)) {
 						<div class="col-md-12 mb-3">
 							<label>Name </label>
 							<input type="text" name="name" class="form-control">
-							<input type="hidden" name="center_id" value="<?php echo $_SESSION['id']?>" class="form-control">
+							<input type="hidden" name="center_id" value="<?php echo $_SESSION['cent_id']?>" class="form-control">
 						</div>
 						<div class="col-md-12 mb-3">
 							<label>Upload Result </label>
@@ -80,7 +80,7 @@ while ($data=mysqli_fetch_assoc($run)) {
                         </tr>
                       </thead>
                       <tbody>
-                        <?php $i=0; foreach ($center as $uploadresult) { ++$i; ?>
+                        <?php if(!empty($center)){ $i=0;  foreach ($center as $uploadresult) { ++$i; ?>
                         <tr>
                           <td><?php echo $i; ?></td>
                           <td><?php echo $uploadresult['enroll']; ?></td>
@@ -90,7 +90,7 @@ while ($data=mysqli_fetch_assoc($run)) {
                           <td>
                              <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $uploadresult['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
                         </tr>  
-                        <?php } ?>
+                        <?php } }?>
                       </tbody>
                     </table>
               </div>

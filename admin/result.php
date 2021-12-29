@@ -1,7 +1,7 @@
 <?php 
 session_start();
-include_once('../admin/connection.php');
-$msg = "";
+  include_once('../admin/connection.php');
+  $msg = "";
   if (isset($_SESSION['msg'])) {
     $msg=$_SESSION['msg'];
     unset($_SESSION['msg']);
@@ -13,11 +13,11 @@ $msg = "";
     header('location:index.php');
   }
   $id = $_SESSION['id'];
-$query="SELECT * FROM `result` WHERE `center_id`=$id";
-$run=mysqli_query($conn,$query);
-while ($data=mysqli_fetch_assoc($run)) {
-  $center[]=$data;
-}
+  $query="SELECT * FROM `result` WHERE `center_id`=' '";
+  $run=mysqli_query($conn,$query);
+  while ($data=mysqli_fetch_assoc($run)) {
+    $center[]=$data;
+  }
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +55,7 @@ while ($data=mysqli_fetch_assoc($run)) {
 						<div class="col-md-12 mb-3">
 							<label>Name </label>
 							<input type="text" name="name" class="form-control">
-							<input type="hidden" name="center_id" value="<?php echo $_SESSION['id']?>" class="form-control">
+							<input type="hidden" name="center_id" value="<?php echo $_SESSION['cent_id']?>" class="form-control">
 						</div>
 						<div class="col-md-12 mb-3">
 							<label>Upload Result </label>

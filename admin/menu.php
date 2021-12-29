@@ -40,9 +40,16 @@ error_reporting(0);
             <a class="dropdown-item" href="alllist.php">All Result List</a>
           </div>
          </li>
-			 <!-- 	<li class="nav-item">
-					<a class="nav-link <?php if($pg=="add_banner"){ echo "active";} ?>" href="result.php">Add Result</a>
-				</li> -->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="AboutVEWT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">List</a>
+          <div class="dropdown-menu" aria-labelledby="AboutVEWT">
+          	 <a class="dropdown-item" href="new_center_request.php">New Franchise List</a>
+            <a class="dropdown-item" href="student_enquiry.php">New Admission Enquiry List</a>
+          </div>
+         </li>
+			 <li class="nav-item">
+					<a class="nav-link <?php if($pg=="new_center_request"){ echo "active";} ?>" href=""></a>
+				</li>
 				<!--<li class="nav-item">
 					<a class="nav-link <?php if($pg=="add_gallery"){ echo "active";} ?>" href="add_gallery.php">Add Gallery</a>
 				</li> -->
