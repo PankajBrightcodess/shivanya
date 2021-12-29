@@ -1,3 +1,14 @@
+<?php 
+session_start();
+$msg = "";
+    if (isset($_SESSION['msg'])) {
+        $msg = $_SESSION['msg'];
+        unset($_SESSION['msg']);
+    }
+    if ($msg != "") {
+        echo "<script> alert('$msg')</script>";
+    }
+  ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -69,7 +80,7 @@
             <div class="col-md-6 col-lg-4">
               <div class="news">
                 <h2>Enquiry for New Franchise</h2>
-                <form action="sendmail.php" method="post" enctype="multipart/form-data" onsubmit="window.alert('Thanks for your Message!')">
+                <form action="sendmail.php" method="post" enctype="multipart/form-data">
                   <input type="text" name="name" placeholder="Name :" class="form-control py-2 my-3" required="">
                   <input type="tel" maxlength="10" name="contact" placeholder="Contact :" class="form-control py-2 mb-3" required="">
                   <input type="email" name="email" placeholder="Email :" class="form-control py-2 mb-3" required="">

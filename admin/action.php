@@ -200,6 +200,35 @@ if(isset($_POST['del_result_admin'])){
 	}
    }
 
+
+   if(isset($_POST['contact_form'])){
+	    $to="info@sologix.in";
+	    $name = $_POST['name'];
+	    $state = $_POST['state'];
+	    $mobile = $_POST['mobile'];
+	    $district = $_POST['district'];
+	    $email = $_POST['email'];
+	    $city = $_POST['city'];
+	    $comment = $_POST['comment'];
+	    $selectedProjects  = 'None';
+	    if(isset($_POST['projects']) && is_array($_POST['projects']) && count($_POST['projects']) > 0){
+	        $selectedProjects = implode(', ', $_POST['projects']);
+	    }
+	    $body = 'Selected Solar: ' . $selectedProjects;
+	    $subject = "Regarding Contact Inquiry";
+	    $from = "info@sologix.com";
+	    $message = "Name: ".$name."\n Mobile: ".$mobile."\n State: ".$state."\n E-mail: ".$email."\n District ".$district."\n City: ".$city."\n".$body."\n Comment: ".$comment;
+	    $headers = "From:" . $from;
+	    if (mail($to, $subject, $message, $headers)) {
+	      echo "<script> alert('Sent Successfully!!'); </script>";
+	      header("location:$_SERVER[HTTP_REFERER]");
+	    }
+	    else {
+	      echo "<script> alert('Failed, Try Again!!'); </script>";
+	      header("location:$_SERVER[HTTP_REFERER]");
+	    }
+}
+
    // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''Center Area Start'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 ?>
