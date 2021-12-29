@@ -7,7 +7,7 @@ include 'admin/connection.php';
    if(isset($_POST['SendMessage'])){
    	// echo '<pre>';
    	// print_r($_POST);die;
-	    $to="pmt.pankaj29@gmail.com";  
+	    $to="pankaj.tiwari@brightcodess.com";  
 	    // support@shivanyacomputer.com
 	    $name = $_POST['name'];
 	    $mobile = $_POST['contact'];
