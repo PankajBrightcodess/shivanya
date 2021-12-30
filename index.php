@@ -1,5 +1,6 @@
 <?php 
 session_start();
+ include_once('admin/connection.php');
 $msg = "";
     if (isset($_SESSION['msg'])) {
         $msg = $_SESSION['msg'];
@@ -7,6 +8,11 @@ $msg = "";
     }
     if ($msg != "") {
         echo "<script> alert('$msg')</script>";
+    }
+    $query="SELECT * FROM `testimonial` WHERE `status`='1'";
+    $run=mysqli_query($conn,$query);
+    while ($data=mysqli_fetch_assoc($run)) {
+      $testimonial[]=$data;
     }
   ?>
 <!doctype html>
@@ -54,7 +60,7 @@ $msg = "";
             <div class="col-6 col-sm-6 col-md-6 col-lg-4 pr-0"><h4>New Batch Start From  :</h4></div>
             <div class="col-5 col-sm-5 col-md-5  col-lg-4 pl-0"><marquee behavior="scroll" direction="left" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">1st january 2022</marquee></div>
 
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mob-btn"><a href="" target="_blank" class="btn btn-success"><i class="fas fa-download"></i> Download Corner</a></div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mob-btn"><a href="pay.php" class="btn btn-success">Pay Now</a></div>
         </div>
     </div>
 </section>
@@ -157,17 +163,23 @@ $msg = "";
                           </ol>-->
                           <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <!-- <div class="testi-pic"><img src="images/successful-students/08.jfif" alt="testimonial" class="img-fluid img-circle"></div> -->
-                                <div class="testi-pic"><h5>"This was my first time taking a course in this format and it far exceeded my expectations." </h5></div>
-                            </div>
-                            <div class="carousel-item">
-                                <!-- <div class="testi-pic"><img src="images/successful-students/03.jfif" alt="testimonial"></div> -->
-                                <div class="testi-pic"><h5>"I came to the class already with some knowledge of the program, but learned a good deal more thanks to your class."</h5></div>
-                            </div>
-                            <div class="carousel-item">
-                                <!-- <div class="testi-pic"><img src="images/successful-students/07.jfif" alt="testimonial"></div> -->
-                                <div class="testi-pic"><h5>"The class is awesome! The instructor spoke very clear and was very knowledgeable and patient."</h5></div>
-                            </div>
+                                        <div class="testi-pic mb-3"><h5 style="color: #FFFB26;font-style: italic;"><?php echo $testimonial[0]['testimonial']?></h5></div>
+                                        <div class="testi-pic"><strong style="color:#C6F7EF;"><?php echo $testimonial[0]['testi_name']?></strong></div>
+                                    </div>
+                            <?php if(!empty($testimonial)){
+                                foreach ($testimonial as $key => $value) {
+                                    if($value['testimonial']!=$testimonial[0]['testimonial']){
+                                        ?>
+                                        <div class="carousel-item">
+                                            <div class="testi-pic mb-3"><h5 style="color: #FFFB26;font-style: italic;"><?php echo $value['testimonial']?></h5></div>
+                                            <div class="testi-pic"><strong style="color:#C6F7EF;"><?php echo $value['testi_name']?></strong></div>
+                                        </div>
+                                    <?php
+
+                                    }  
+                                }
+                            }
+                            ?>
                           </div>
                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                             <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->

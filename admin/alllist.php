@@ -39,7 +39,7 @@ while ($data=mysqli_fetch_assoc($run)) {
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header bg-secondary text-light"><h4>Add Result</h4></div>
+            <div class="card-header bg-secondary text-light"><h4>Result List</h4></div>
             <div class="card-body">
               <div class="row">
               

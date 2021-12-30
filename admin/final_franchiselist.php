@@ -13,7 +13,7 @@ session_start();
     header('location:index.php');
   }
   $id = $_SESSION['id'];
-  $query="SELECT * FROM `centre_request`";
+  $query="SELECT * FROM `addpayment` WHERE `payment_status`='1' AND `category`='franchise'";
   $run=mysqli_query($conn,$query);
   while ($data=mysqli_fetch_assoc($run)) {
     $center[]=$data;
@@ -29,7 +29,7 @@ session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php include '../admin/header-links.php'; ?>
-  <title>New Center Request |  Shivanya </title>
+  <title>New Center List |  Shivanya </title>
 </head>
 <body>
   <?php include 'menu.php'; ?>
@@ -38,7 +38,7 @@ session_start();
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header bg-secondary text-light"><h4>New Centre Franchise List</h4></div>
+            <div class="card-header bg-secondary text-light"><h4>Centre Franchise List</h4></div>
             <div class="card-body">
               <div class="row">
   				     <div class="col-md-12">
@@ -47,18 +47,12 @@ session_start();
                           <tr class="bg-dark text-light">
                             <th>#</th>
                             <th>Name</th>
-                            <th>Gender</th>
-                            <th>DOB</th>
-                            <th>Mobile </th>
                             <th>Email</th>
-                            <th>Location</th>
-                            <th>City</th>
-                            <th>State</th>
-                            <th>Pincode</th>
-                            <th>Pre Center</th>
-                            <th>Language</th>
-                            <th>Other Information</th>
-                            <th>Request date</th>
+                            <th>phone</th>
+                            <th>Institute Name </th>
+                            <th>Amount</th>
+                            <th>Payment Status</th>
+                            
                             <th>Action</th>
                           </tr>
                         </thead>
@@ -67,18 +61,12 @@ session_start();
                           <tr>
                             <td><?php echo $i; ?></td>
                             <td><?php echo $franchise['name']; ?></td>
-                            <td><?php echo $franchise['gender']; ?></td>
-                            <td><?php echo $franchise['dob']; ?></td>
-                            <td><?php echo $franchise['mobile']; ?></td>
                             <td><?php echo $franchise['email']; ?></td>
-                            <td><?php echo $franchise['location']; ?></td>
-                            <td><?php echo $franchise['city']; ?></td>
-                            <td><?php echo $franchise['state']; ?></td>
-                            <td><?php echo $franchise['pincode']; ?></td>
-                            <td><?php echo $franchise['precenter']; ?></td>
-                            <td><?php echo $franchise['language']; ?></td>
-                            <td><?php echo $franchise['other_info']; ?></td>
-                            <td><?php echo $franchise['added_on']; ?></td>
+                            <td><?php echo $franchise['phone']; ?></td>
+                            <td><?php echo $franchise['ins_name']; ?></td>
+                            <td><?php echo $franchise['amount'].'/-'; ?></td>
+                            <td><span style="background: green; color: white; border-radius: 20px; padding: 10px;">Paid</span></td>
+                            
                             <td>
                                 <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $franchise['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a>
                             </td>
@@ -129,7 +117,7 @@ $('.delete').click(function(e){
         $.ajax({
                 type:'POST',
                 url:'action.php',
-               data:{id:id,del_franchise:'del_franchise'},
+               data:{id:id,del_finallist:'del_finallist'},
                 success: function(result){
                     // alert(result);
                     console.log(result);

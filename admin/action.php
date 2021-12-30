@@ -312,13 +312,107 @@ if(isset($_POST['del_result_admin'])){
 	}
    }
 
+   if(isset($_POST['addtestim'])){
+   	// echo '<pre>';
+   	// print_r($_POST);die;
+   	$testimonial = $_POST['testimonial'];	
+   	$testi_name = $_POST['testi_name'];	
+   	$added_on = date('Y-m-d');
+   	$query="INSERT INTO `testimonial`(`testimonial`,`testi_name`,`added_on`) VALUES ('$testimonial','$testi_name','$added_on')";
+		$sql=mysqli_query($conn,$query);
+		if($sql){
+			 header("Location:$_SERVER[HTTP_REFERER]");
+			$_SESSION['msg']="Successfully Added!!!";	
+		}
+		else{
+			$_SESSION['msg']="Not added Testimonial !!!";
+			header("Location:$_SERVER[HTTP_REFERER]");
+		}
+   }
+
+   
+   if(isset($_POST['del_testimonial'])){
+		
+	$id = $_POST['id'];	
+	// print_r($id);die;
+	$query="DELETE FROM `testimonial` WHERE `id`='$id'";
+	$sql=mysqli_query($conn,$query);
+	if($sql){
+		 header('Location:add_testimonial.php');
+		$_SESSION['msg']="Testimonial Deleted Successfully !!!";	
+	}
+	else{
+		$_SESSION['msg']="Testimonial Not Deleted!!!";
+		header("location:$_SERVER[HTTP_REFERER]");
+	}
+	
+   }
+
+   if(isset($_POST['update_testimonial'])){
+   	// echo '<pre>';
+   	// print_r($_POST);die;
+   	$id = $_POST['id'];	
+   	$testimonial = $_POST['testimonial'];	
+   	$testi_name = $_POST['testi_name'];	
+   	 $query="UPDATE `testimonial` SET `testimonial`='$testimonial',`testi_name`='$testi_name' WHERE `id`='$id'";
+	$run=mysqli_query($conn,$query);
+	if($run){
+		 header('Location:add_testimonial.php');
+		$_SESSION['msg']="Testimonial Updated Successfully !!!";	
+	}
+	else{
+		$_SESSION['msg']="Testimonial Not Updated!!!";
+		header("location:$_SERVER[HTTP_REFERER]");
+	}	
+   }
 
 
 
+   if(isset($_POST['payment']))
+   {
 
+   	$category = $_POST['category'];
+   	 $name = $_POST['name'];
+   	 $email = $_POST['email'];
+   	 $phone = $_POST['phone'];
+   	 $course = $_POST['course'];
+   	 $istname = $_POST['istname'];
+   	 $amount = $_POST['amount'];
+   	 $added_on = date('Y-m-d');
+   	 $length = 15;
+	 $request_no=substr(str_shuffle(str_repeat($x='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
+	 $sql = "INSERT INTO  `addpayment` (`category`,`name`,`email`,`phone`,`ins_name`,`course`,`amount`,`request_no`,`added_on`)VALUES ('$category','$name','$email','$phone','$istname','$course','$amount','$request_no','$added_on')";
+	 // print_r($sql);die;
+	 if (mysqli_query($conn,$sql)) {
+		$_SESSION['msg']="Records Added Successfully !!!";
+		$_SESSION['last_inst_id']=$conn->insert_id; 
+		// print_r($_SESSION['last_inst_id']);die;
+       header('location:../payment.php');
+	 } else {
+		$_SESSION['msg']="Records Not Added !!!";
+       header('header:registrationform.php');
+	 }
+   		
+  }
 
+  
 
-
+  if(isset($_POST['del_finallist'])){
+		
+	$id = $_POST['id'];	
+	// print_r($id);die;
+	$query="DELETE FROM `addpayment` WHERE `id`='$id'";
+	$sql=mysqli_query($conn,$query);
+	if($sql){
+		 header('Location:final_franchiselist.php');
+		$_SESSION['msg']="Franchise Deleted Successfully !!!";	
+	}
+	else{
+		$_SESSION['msg']="Franchise Not Deleted!!!";
+		header("location:$_SERVER[HTTP_REFERER]");
+	}
+	
+   }
    // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''Center Area Start'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 ?>
