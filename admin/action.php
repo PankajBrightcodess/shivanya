@@ -13,6 +13,7 @@ function Imageupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size
 			if($width <= "$pass_width" && $height <= "$pass_height" && $image_weight <= "$pass_size"){
 				// dimension check
 				$tmp = $_FILES["$inputname"]["tmp_name"];
+				// print_r($extension);die;
 				$extension[1]="jpg";
 				$name=$newname.".".$extension[1];
 				if(move_uploaded_file($tmp, "$dir" .$name)){
@@ -30,6 +31,40 @@ function Imageupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size
 	}
 	else{
 		$error .="Please Select an image !!!";
+	}
+	return $error;
+}
+
+function Pdfupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size,$newname){
+	if(file_exists($_FILES["$inputname"]["tmp_name"])){
+		// do this contain any file check
+		$file_extension = strtolower(pathinfo($_FILES["$inputname"]["name"], PATHINFO_EXTENSION));
+		$error="";
+		if(in_array($file_extension, $allext)){
+			// file extension check
+			list($width, $height, $type, $attr) = getimagesize($_FILES["$inputname"]["tmp_name"]);
+			$pdf_weight = $_FILES["$inputname"]["size"];
+			if($width <= "$pass_width" && $height <= "$pass_height" && $pdf_weight <= "$pass_size"){
+				// dimension check
+				$tmp = $_FILES["$inputname"]["tmp_name"];
+				// print_r($extension);die;
+				$extension[1]="pdf";
+				
+				$name=$newname.".".$extension[1];
+				if(move_uploaded_file($tmp, "$dir" .$name)){
+					return true;
+				}
+			}
+			else{
+				$error .="Please upload Pdf size of $pass_width X $pass_height !!!";
+			}
+		}
+		else{
+			$error .="Please upload an Pdf !!!";
+		}
+	}
+	else{
+		$error .="Please Select an Pdf !!!";
 	}
 	return $error;
 }
@@ -90,6 +125,31 @@ if(isset($_POST['add_center'])){
 			        header("location:$_SERVER[HTTP_REFERER]");
 		   }
 	}
+	if(isset($_POST['del_center'])){
+		
+	$id = $_POST['id'];
+	$ids = $_POST['id'];	
+	$query="DELETE FROM `admin` WHERE `cent_id`='$id'";
+	$sql=mysqli_query($conn,$query);
+	if($sql){
+	    $query1="DELETE FROM `sh_addcenter` WHERE `id`='$ids'";
+	    $sql1=mysqli_query($conn,$query1);
+	    if($sql1){
+	    	$_SESSION['msg']="Center Deleted Successfully !!!";
+	    	header("location:$_SERVER[HTTP_REFERER]");
+	    }
+	    else{
+	    	$_SESSION['msg']="Center Not Deleted!!!";
+		    header("location:$_SERVER[HTTP_REFERER]");
+	    }
+			
+	}
+	else{
+		$_SESSION['msg']="Center Not Deleted!!!";
+		header("location:$_SERVER[HTTP_REFERER]");
+	}
+   }
+
 	
 	if(isset($_POST['del'])){
 		
@@ -152,7 +212,8 @@ if(isset($_POST['add_center'])){
    }
 
    if(isset($_POST['resultupload'])){
-	 //    echo '<pre>';
+	    // echo '<pre>';
+	 //    print_r($_FILES['upload_image']['name']);
 		// print_r($_POST);die;
 		$enroll=$_POST['enroll'];
 		$course=$_POST['course'];
@@ -161,12 +222,14 @@ if(isset($_POST['add_center'])){
 		$added_on=date('Y-m-d');
 		$photo = $_FILES['upload_image']['name'];
 		$photo = explode('.',$photo);
+		// print_r($photo);
 		$image= time().$photo[0];
+		$extension = $photo[1];
 		$imagename = $_FILES['upload_image']['tmp_name'];
 			list($width,$height)=getimagesize($_FILES['upload_image']['tmp_name']);
 		$dir="../upload/";
 		$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
-		$check = Imageupload($dir,'upload_image',$allext,"1800000","1800000",'100000000',$image);	
+		$check = Imageupload($dir,'upload_image',$allext,"1800000","1800000",'100000000',$image,$extension);	
 			// print_r($check);die;
 		if($check===true){
 			$image = $image.".jpg";	
@@ -413,6 +476,155 @@ if(isset($_POST['del_result_admin'])){
 	}
 	
    }
-   // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''Center Area Start'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+   // '''''''''''''''add study material''''''''''''''''
+   if(isset($_POST['material_upload'])){
+   	// echo '<pre>';
+   	// print_r($_FILES);	print_r($_POST);die;
+     	$course=$_POST['course'];
+		$topic_name=$_POST['topic_name'];
+		if($_POST['video_link']!=''){
+			$video_link=$_POST['video_link'];
+		}else{
+			$video_link='';
+		}
+		
+		$added_on=date('Y-m-d');
+		// ---------------image upload-----------------
+		if($_FILES['upload_image']['name']!=''){
+			$photo = $_FILES['upload_image']['name'];
+			$photo = explode('.',$photo);
+			// print_r($photo);
+			$image= time().$photo[0];
+			$imagename = $_FILES['upload_image']['tmp_name'];
+			list($width,$height)=getimagesize($_FILES['upload_image']['tmp_name']);
+			$dir="../study_material/image/";
+			$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
+			$check = Imageupload($dir,'upload_image',$allext,"1800000","1800000",'100000000',$image,$extension);
+			$image = $image.".jpg";	
+		}else{
+			$_FILES['upload_image']['name']='';
+		}
+		if($_FILES['upload_pdf']['name']!=''){
+			$pdfs = $_FILES['upload_pdf']['name'];
+			$pdfs = explode('.',$pdfs);
+			// print_r($pdfs);
+			$pdf= time().$pdfs[0];
+			$pdfname = $_FILES['upload_pdf']['tmp_name'];
+			list($width,$height)=getimagesize($_FILES['upload_pdf']['tmp_name']);
+			$dir="../study_material/pdf/";
+			$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
+			$check1 = Pdfupload($dir,'upload_pdf',$allext,"1800000","1800000",'100000000',$pdf);
+			$pdf = $pdf.".pdf";	
+
+		}
+		else{
+			$_FILES['upload_image']['name']='';
+
+		}
+		
+		// ---------------------pdf upload--------------------	
+		
+			// print_r($check);die;
+		if($check===true || $check1===true){
+			
+			$query="INSERT INTO `material_upload`(`course`,`topic_name`,`upload_image`,`upload_pdf`,`video`,`added_on`) VALUES ('$course','$topic_name','$image','$pdf','$video_link','$added_on')";
+			$sql=mysqli_query($conn,$query);
+			if($sql){
+				 header("Location:$_SERVER[HTTP_REFERER]");
+				$_SESSION['msg']="Successfully Added!!!";	
+			}
+			else{
+				$_SESSION['msg']="Not added result !!!";
+				header("Location:$_SERVER[HTTP_REFERER]");
+			}
+		}
+		else{
+			$_SESSION['msg']=$check;
+			header("location:$_SERVER[HTTP_REFERER]");	
+		}
+   }
+
+  if(isset($_POST['del_material'])){
+		
+	$id = $_POST['id'];	
+	// print_r($id);die;
+	$query="DELETE FROM `material_upload` WHERE `id`='$id'";
+	$sql=mysqli_query($conn,$query);
+	if($sql){
+		 header('Location:add_studymetrial.php');
+		$_SESSION['msg']="Material Deleted Successfully !!!";	
+	}
+	else{
+		$_SESSION['msg']="Material Not Deleted!!!";
+		header("location:$_SERVER[HTTP_REFERER]");
+	}
+	
+   }
+   
+if(isset($_POST['add_student'])){
+	$enroll_no = $_POST['enroll_no'];	
+	$std_name = $_POST['std_name'];	
+	$dob = $_POST['dob'];	
+	$cntr_name = $_POST['cntr_name'];	
+	$course = $_POST['course'];	
+	$address = $_POST['address'];	
+	$mobile = $_POST['mobile'];	
+	$email = $_POST['email'];	
+	$pass = $_POST['pass'];
+	$added_on = date('Y-m-d');
+	$query="INSERT INTO `student`(`enroll_no`,`std_name`,`dob`,`cntr_name`,`course`,`address`,`mobile`,`email`,`pass`,`added_on`) VALUES ('$enroll_no','$std_name','$dob','$cntr_name','$course','$address','$mobile','$email','$pass','$added_on')";
+			$sql=mysqli_query($conn,$query);
+		if($sql){
+			 header('Location:add_student.php');
+			$_SESSION['msg']="Student added Successfully !!!";	
+		}
+		else{
+			$_SESSION['msg']="Student Not added!!!";
+			header("location:$_SERVER[HTTP_REFERER]");
+		}		
+}
+
+if(isset($_POST['update_student'])){
+	$id = $_POST['id'];	
+	$enroll_no = $_POST['enroll_no'];	
+	$std_name = $_POST['std_name'];	
+	$dob = $_POST['dob'];	
+	$cntr_name = $_POST['cntr_name'];	
+	$course = $_POST['course'];	
+	$address = $_POST['address'];	
+	$mobile = $_POST['mobile'];	
+	$email = $_POST['email'];	
+	$pass = $_POST['pass'];
+	$query="UPDATE `student` SET `enroll_no`='$enroll_no',`std_name`='$std_name',`dob`='$dob',`cntr_name`='$cntr_name',`course`='$course',`address`='$address',`mobile`='$mobile',`email`='$email',`pass`='$pass' WHERE `id`='$id'";
+	$run=mysqli_query($conn,$query);
+	if($run){
+		 header('Location:add_student.php');
+		$_SESSION['msg']="Student Updated Successfully !!!";	
+	}
+	else{
+		$_SESSION['msg']="Student Not Updated!!!";
+		header("location:$_SERVER[HTTP_REFERER]");
+	}	
+}
+
+
+  if(isset($_POST['del_student'])){
+		
+	$id = $_POST['id'];	
+	// print_r($id);die;
+	$query="DELETE FROM `student` WHERE `id`='$id'";
+	$sql=mysqli_query($conn,$query);
+	if($sql){
+		 header('Location:add_student.php');
+		$_SESSION['msg']="Student Deleted Successfully !!!";	
+	}
+	else{
+		$_SESSION['msg']="Student Not Deleted!!!";
+		header("location:$_SERVER[HTTP_REFERER]");
+	}
+	
+   }
+
 
 ?>

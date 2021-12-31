@@ -213,7 +213,7 @@ while ($data=mysqli_fetch_assoc($run)) {
                 url:'action.php',
                data:{id:id,del_center:'del_center'},
                 success: function(result){
-                    alert(result);
+                    // alert(result);
                     console.log(result);
                     location.reload();
                     },
