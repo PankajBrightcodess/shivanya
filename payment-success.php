@@ -15,7 +15,7 @@ $msg = "";
       // $payment_date = date('Y/m/d');
       $payment_status = 1;
       $id = $_SESSION['last_inst_id'];
-      unset($_SESSION['last_inst_id']);
+      // unset($_SESSION['last_inst_id']);
       $sql="UPDATE addpayment SET payment_status = '$payment_status',payment_id = '$razorpay_payment_id', payment_details = '$payment_details' WHERE `id`='$id'";
       $conn->query($sql);
     }
@@ -37,7 +37,7 @@ $msg = "";
               <img src="https://img.icons8.com/ios-filled/50/000000/cloud-checked.png"/>
               <h3>Payment Successfull !!!</h3>
               <p style="color:green;">Your Payment has been Successfully Recieved !!!</p>
-              <a href="index.php" class="btn btn-success mt-2">Done</a>
+              <a href="payment_slip.php" class="btn btn-success mt-2">Done</a>
             </div>
           </div>
         </div>
