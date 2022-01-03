@@ -627,4 +627,50 @@ if(isset($_POST['update_student'])){
    }
 
 
+   if(isset($_POST['change_admin_pass'])){
+   	    $email = $_POST['email'];
+	   	$query="SELECT * FROM `admin` WHERE `email`='$email' AND `role`='1'";
+		$run=mysqli_query($conn,$query);
+		$num=mysqli_num_rows($run);
+		if($num){
+		$data=mysqli_fetch_assoc($run);
+		$_SESSION['id'] = $data['id'];
+		$_SESSION['role'] = $data['role'];
+		if($_SESSION['role']==1){
+			header('location:newpassword.php');
+		}
+		else{
+			$_SESSION['msg']="Please Enter Correct Email id";
+			header("Location: " . $_SERVER['HTTP_REFERER']);
+		}
+		 }	
+		else{
+			$_SESSION['msg']="Please Enter Correct Email id";
+			header("Location: " . $_SERVER['HTTP_REFERER']);
+		}
+	}
+
+	if(isset($_POST['update_password_admin'])){
+		
+		   if($_POST['new_pass']==$_POST['con_pass']){
+		   	$pass = $_POST['con_pass'];
+				$id = $_SESSION['id'];
+				$query="UPDATE `admin` SET `password`='$pass' WHERE `id`='$id'";
+				$run=mysqli_query($conn,$query);
+				if($run){
+					 header('Location:index.php');
+					$_SESSION['msg']="Password Updated Successfully !!!";	
+				}
+				else{
+					$_SESSION['msg']="Password Not Updated!!!";
+					header("location:$_SERVER[HTTP_REFERER]");
+				}
+			}
+			else{
+				$_SESSION['msg']="Please Enter Correct Password";
+				header("Location: " . $_SERVER['HTTP_REFERER']);
+			}
+	}
+
+
 ?>

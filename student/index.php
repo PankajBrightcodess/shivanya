@@ -15,7 +15,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <?php include 'admin/header-links.php'; ?>
+    <?php include '../admin/header-links.php'; ?>
     <title>Student Login | Shivanya Computer Education</title>
 </head>
 <body style="background:#e8e7e5; ">
@@ -28,7 +28,7 @@
                         <div class="logo-section">
                             <h1 style="font-size: 35px; text-align:center; color: white;">Student Login</h1><hr>
                         </div>
-                        <form action="student/action.php" method="POST">
+                        <form action="action.php" method="POST">
                             <div class="form-group">
                                 <!-- <i class="fa fa-envelope-square fa-lg passkey"></i> -->
                                 <input type="email" name="email" placeholder="Enter User Id:" class="form-control" required="" style="padding-left: 30px;">
@@ -37,7 +37,10 @@
                                 <!-- <i class="fa fa-key fa-lg passkey"></i> -->
                                 <input type="password" name="pass" placeholder="Enter Password:" class="form-control" required="" style="padding-left: 30px;">
                             </div>
-                            <input type="submit" class="btn btn-warning form-control" name="studentlogin" value="Login">
+                            <div class="form-group mb-5">
+                                <input type="submit" class="btn btn-warning form-control" name="studentlogin" value="Login">
+                                <label style="color:white;float:right; padding:10px;"><a href="forget_password_student.php" style="color:white">forgot password</a></label>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -45,6 +48,6 @@
             </div>
         </div>
     </section>
-    <?php include 'admin/footer-links.php'; ?>
+    <?php include '../admin/footer-links.php'; ?>
 </body>
 </html>

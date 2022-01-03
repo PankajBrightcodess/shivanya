@@ -50,11 +50,12 @@ if(isset($_POST['studentlogin'])){
 		$_SESSION['enroll_no'] = $data['enroll_no'];
 		$_SESSION['id'] = $data['id'];
 		$_SESSION['std_name'] = $data['std_name'];
+		$_SESSION['course'] = $data['course'];
 		header('location:dashboard.php');		
 	}
 	else{
 		$_SESSION['msg']='Invalid details !!!';
-		header("Location: " . $_SERVER['HTTP_REFERER']);
+		header("Location: ".$_SERVER['HTTP_REFERER']);
 	}
 }
 
@@ -109,6 +110,57 @@ if(isset($_POST['del_result'])){
 		header("location:$_SERVER[HTTP_REFERER]");
 	}
    }
+
+
+   if(isset($_POST['change_student_pass'])){
+   	// print_r($_POST);die;
+   	$email = $_POST['email'];
+	$query="SELECT * FROM `student` WHERE `email`='$email'";
+	$run=mysqli_query($conn,$query);
+		$num=mysqli_num_rows($run);
+		if($num){
+		$data=mysqli_fetch_assoc($run);
+		$_SESSION['id'] = $data['id'];
+		$_SESSION['enroll_no'] = $data['enroll_no'];
+		if(!empty($_SESSION['enroll_no'])){
+			header('location:newpassword_student.php');
+		}
+		else{
+			$_SESSION['msg']="Please Enter Correct Email id";
+			header("Location: " . $_SERVER['HTTP_REFERER']);
+		}
+		 }	
+		else{
+			$_SESSION['msg']="Please Enter Correct Email id";
+			header("Location: " . $_SERVER['HTTP_REFERER']);
+		}
+   }
+
+   if(isset($_POST['update_password_student'])){
+   	// echo '<pre>';
+   	// print_R($_POST);die;
+		
+		   if($_POST['new_pass']==$_POST['con_pass']){
+		   	   $pass = $_POST['con_pass'];
+				$id = $_SESSION['id'];
+				$query="UPDATE `student` SET `pass`='$pass' WHERE `id`='$id'";
+				$run=mysqli_query($conn,$query);
+				if($run){
+					 header('Location:index.php');
+					$_SESSION['msg']="Password Updated Successfully !!!";	
+				}
+				else{
+					$_SESSION['msg']="Password Not Updated!!!";
+					header("location:$_SERVER[HTTP_REFERER]");
+				}
+			}
+			else{
+				$_SESSION['msg']="Please Enter Correct Password";
+				header("Location: " . $_SERVER['HTTP_REFERER']);
+			}
+	}
+	
+   
 
 
    // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''Center Area Start'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''

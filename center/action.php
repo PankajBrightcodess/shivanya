@@ -117,6 +117,65 @@ if(isset($_POST['del_result'])){
    }
 
 
+    if(isset($_POST['change_center_pass'])){
+	    // print_r($_POST);die;
+	   	$email = $_POST['email'];
+		$query="SELECT * FROM `admin` WHERE `email`='$email' AND `role`='2'";
+		$run=mysqli_query($conn,$query);
+			$num=mysqli_num_rows($run);
+			if($num){
+			$data=mysqli_fetch_assoc($run);
+			$_SESSION['id'] = $data['id'];
+			$_SESSION['role'] = $data['role'];
+			$_SESSION['cent_id'] = $data['cent_id'];
+			if($_SESSION['role']==2){
+				header('location:newpassword_center.php');
+			}
+			else{
+				$_SESSION['msg']="Please Enter Correct Email id";
+				header("Location: " . $_SERVER['HTTP_REFERER']);
+			}
+			 }	
+			else{
+				$_SESSION['msg']="Please Enter Correct Email id";
+				header("Location: " . $_SERVER['HTTP_REFERER']);
+			}
+   }
+
+   if(isset($_POST['update_password_center'])){
+  // print_r($_POST);die;
+		
+		   if($_POST['new_pass']==$_POST['con_pass']){
+		   	   $pass = $_POST['con_pass'];
+				$id = $_SESSION['id'];
+				$query="UPDATE `admin` SET `password`='$pass' WHERE `id`='$id'";
+				$run=mysqli_query($conn,$query);
+				if($run){
+					$c_id = $_SESSION['cent_id'];
+					$query1="UPDATE `sh_addcenter` SET `password`='$pass' WHERE `id`='$c_id'";
+				    $run1=mysqli_query($conn,$query1);
+				   if($run1){
+				   	header('Location:index.php');
+					$_SESSION['msg']="Password Updated Successfully !!!";	
+				   }
+				   else{
+				   	$_SESSION['msg']="Password Not Updated!!!";
+					header("location:$_SERVER[HTTP_REFERER]");
+				}	 
+				}
+				else{
+					$_SESSION['msg']="Password Not Updated!!!";
+					header("location:$_SERVER[HTTP_REFERER]");
+				}
+			}
+			else{
+				$_SESSION['msg']="Please Enter Correct Password";
+				header("Location: " . $_SERVER['HTTP_REFERER']);
+			}
+	}
+
+
    // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''Center Area Start'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
    
 ?>

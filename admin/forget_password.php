@@ -1,6 +1,5 @@
 <?php 
 	session_start();
-	unset($_SESSION['id']);
 	$msg = "";
 		if(isset($_SESSION['msg'])){
 			$msg = $_SESSION['msg'];
@@ -25,22 +24,18 @@
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
-					<div class="login-form" style="background: #482300; padding:15px; border-radius: 15px;">
+					<div class="login-form" style="background: #246156; padding:15px; border-radius: 15px;">
 						<div class="logo-section">
-							<h1 style="font-size: 35px; text-align:center; color: white;">Admin Login</h1><hr>
+							<h1 style="font-size: 35px; text-align:center; color: white;">Change Password</h1><hr>
 						</div>
 						<form action="action.php" method="POST">
 							<div class="form-group">
 								<!-- <i class="fa fa-envelope-square fa-lg passkey"></i> -->
-								<input type="email" name="email" placeholder="Enter User Id:" class="form-control" required="">
+								<input type="email" name="email" placeholder="Enter Valid User Id:" class="form-control" required="">
 							</div>
-							<div class="form-group">
-								<!-- <i class="fa fa-key fa-lg passkey"></i> -->
-								<input type="password" name="pass" placeholder="Enter Password:" class="form-control" required="" >
-							</div>
+							
 							<div class="form-group mb-5">
-								<input type="submit" class="btn btn-warning form-control" name="login" value="Login">
-								<label style="color:white;float:right; padding:10px;"><a href="forget_password.php" style="color:white">forgot password</a></label>
+								<input type="submit" class="btn btn-warning form-control" name="change_admin_pass" value="Change Password">
 							</div>
 						</form>
 

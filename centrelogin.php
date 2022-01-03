@@ -28,6 +28,7 @@
                     </div>
                     
                     <button type="submit" name="center_login" class="my-3 btn btn-success btn-lg btn-block">Send</button>
+                    
                 </form>
             </div>
             <div class="clearfix"></div>
