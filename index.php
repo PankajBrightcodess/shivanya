@@ -58,7 +58,7 @@ $msg = "";
     <div class="container">
         <div class="row">
             <div class="col-6 col-sm-6 col-md-6 col-lg-4 pr-0"><h4>New Batch Start From  :</h4></div>
-            <div class="col-5 col-sm-5 col-md-5  col-lg-4 pl-0"><marquee behavior="scroll" direction="left" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">1st january 2022</marquee></div>
+            <div class="col-5 col-sm-5 col-md-5  col-lg-4 pl-0"><marquee behavior="scroll" direction="left" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">1st january 2022 , Online Classes is also Available</marquee></div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 mob-btn"><a href="pay.php" class="btn btn-success">Pay Now</a></div>
         </div>
@@ -118,31 +118,7 @@ $msg = "";
                 <div class="col-md-12">
                   <h2>Our Successful Students</h2><hr class="w-50 mb-5 border-warning">
                    <div class="customer-logos slider">
-                    <!-- <div class="slide"><a href="#"><img src="images/successful-students/01.jfif" alt="successful-students" class="w-100"></a></div> -->
-                      
-                      
-                       <!-- <div class="slide"><a href="#"><img src="images/successful-students/ss9.jpg" alt="successful-students" class="w-100"></a></div> -->
-                      
-                     <!--   <div class="slide"><a href="#"><img src="images/successful-students/03.jfif" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/04.jfif" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/02.jfif" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/05.jfif" alt="successful-students" class="w-100"></a></div>
-                        <div class="slide"><a href="#"><img src="images/successful-students/08.jfif" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/06.jfif" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/07.jfif" alt="successful-students" class="w-100"></a></div> -->
-                    
-                      <!-- <div class="slide"><a href="#"><img src="images/successful-students/09.jfif" alt="successful-students" class="w-100"></a></div> -->
-                       <!--  <div class="slide"><a href="#"><img src="images/successful-students/ss10.jfif" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss7.jfif" alt="successful-students" class="w-100"></a></div>
-                     
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss11.jfif" alt="successful-students" class="w-100"></a></div> -->
-                      
-
-                     <!--  <div class="slide"><a href="#"><img src="images/successful-students/ss13.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss14.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss15.jpg" alt="successful-students" class="w-100"></a></div>
-                      <div class="slide"><a href="#"><img src="images/successful-students/ss16.jpg" alt="successful-students" class="w-100"></a></div> -->
-
+                   
                    </div>
                 </div>
            </div>
@@ -157,11 +133,6 @@ $msg = "";
                     <div class=" card-header"><h2>Testimonial</h2></div>
                     <div class="card-body">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                          <!--<ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                          </ol>-->
                           <div class="carousel-inner">
                             <div class="carousel-item active">
                                         <div class="testi-pic mb-3"><h5 style="color: #FFFB26;font-style: italic;"><?php echo $testimonial[0]['testimonial']?></h5></div>
