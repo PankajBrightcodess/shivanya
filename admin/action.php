@@ -34,7 +34,7 @@ function Imageupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size
 	}
 	return $error;
 }
-
+// ''''''''''''''''''''''''''''''''pdf''''''''''''''''''''''''''''''''''''''''''''
 function Pdfupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size,$newname){
 	if(file_exists($_FILES["$inputname"]["tmp_name"])){
 		// do this contain any file check
@@ -68,7 +68,41 @@ function Pdfupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size,$
 	}
 	return $error;
 }
-// '''''''''''''''''''''''''''''''''''''''
+// '''''''''''''''''''''''''''''''''''''''video'''''''''''''''''''''''''''''''''''''''''
+function videoupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size,$newname){
+	if(file_exists($_FILES["$inputname"]["tmp_name"])){
+		// do this contain any file check
+		$file_extension = strtolower(pathinfo($_FILES["$inputname"]["name"], PATHINFO_EXTENSION));
+		$error="";
+		if(in_array($file_extension, $allext)){
+			// file extension check
+			list($width, $height, $type, $attr) = getimagesize($_FILES["$inputname"]["tmp_name"]);
+			$pdf_weight = $_FILES["$inputname"]["size"];
+			if($width <= "$pass_width" && $height <= "$pass_height" && $pdf_weight <= "$pass_size"){
+				// dimension check
+				$tmp = $_FILES["$inputname"]["tmp_name"];
+				// print_r($extension);die;
+				$extension[1]="mp4";
+				
+				$name=$newname.".".$extension[1];
+				if(move_uploaded_file($tmp, "$dir" .$name)){
+					return true;
+				}
+			}
+			else{
+				$error .="Please upload Video size of $pass_width X $pass_height !!!";
+			}
+		}
+		else{
+			$error .="Please upload an Video !!!";
+		}
+	}
+	else{
+		$error .="Please Select an Video !!!";
+	}
+	return $error;
+}
+// '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 if(isset($_POST['login'])){
 	// print_r($_POST);die;
 	$email=$_POST['email'];
@@ -479,15 +513,9 @@ if(isset($_POST['del_result_admin'])){
 
    // '''''''''''''''add study material''''''''''''''''
    if(isset($_POST['material_upload'])){
-   	// echo '<pre>';
-   	// print_r($_FILES);	print_r($_POST);die;
      	$course=$_POST['course'];
 		$topic_name=$_POST['topic_name'];
-		if($_POST['video_link']!=''){
-			$video_link=$_POST['video_link'];
-		}else{
-			$video_link='';
-		}
+		
 		
 		$added_on=date('Y-m-d');
 		// ---------------image upload-----------------
@@ -500,7 +528,7 @@ if(isset($_POST['del_result_admin'])){
 			list($width,$height)=getimagesize($_FILES['upload_image']['tmp_name']);
 			$dir="../study_material/image/";
 			$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
-			$check = Imageupload($dir,'upload_image',$allext,"1800000","1800000",'100000000',$image,$extension);
+			$check = Imageupload($dir,'upload_image',$allext,"1800000","1800000",'100000000',$image);
 			$image = $image.".jpg";	
 		}else{
 			$_FILES['upload_image']['name']='';
@@ -516,6 +544,25 @@ if(isset($_POST['del_result_admin'])){
 			$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
 			$check1 = Pdfupload($dir,'upload_pdf',$allext,"1800000","1800000",'100000000',$pdf);
 			$pdf = $pdf.".pdf";	
+
+		}
+		else{
+			$_FILES['upload_image']['name']='';
+
+		}
+
+		if($_FILES['video_link']['name']!=''){
+			// print_r($_FILES['video_link']['name']);die;
+			$videos = $_FILES['video_link']['name'];
+			$videos = explode('.',$videos);
+			// print_r($videos);
+			$video= time().$videos[0];
+			$videoname = $_FILES['video_link']['tmp_name'];
+			list($width,$height)=getimagesize($_FILES['video_link']['tmp_name']);
+			$dir="../study_material/video/";
+			$allext=array("mp4");
+			$check1 = videoupload($dir,'video_link',$allext,"18000000000","1800000000",'100000000',$video);
+			$video_link = $video.".mp4";	
 
 		}
 		else{

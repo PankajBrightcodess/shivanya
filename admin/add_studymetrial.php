@@ -82,7 +82,8 @@ session_start();
             </div>
              <div class="col-md-12 mb-3">
               <label>Video Link</label>
-              <input type="text" name="video_link" placeholder="Enter Video Link" class="form-control">
+              <input type="file" name="video_link" accept="video/*"  class="form-control">
+              <!-- <input type="text" name="video_link" placeholder="Enter Video Link" class="form-control"> -->
             </div>
 						<div class="col-md-12">
 							<input type="submit" name="material_upload" class="btn btn-sm btn-success">
@@ -122,7 +123,20 @@ session_start();
                                     ?><a href="../study_material/pdf/<?php echo $materials['upload_pdf']; ?>" class="btn btn-sm btn-success">Pdf Download</a></td><?php
                              }
                             ?></td>
-                          <td><a href="<?php echo $materials['video']; ?>"><?php echo $materials['video']; ?></a></td>
+                          <td>
+                            <?php
+                              if(!empty($materials['video'])){
+                                ?>
+                                  <video width="320" height="240" controls>
+                                     <source src="../study_material/video/<?php echo $materials['video']; ?>" type="video/mp4">
+                                   </video>
+                                <?php
+                              }
+                              else{
+                                ?><h6>Comming Soon...</h6><?php
+                              }
+                            ?>
+                            </td>
 
                           <td>
                               <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $materials['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a></td>
