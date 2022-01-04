@@ -74,7 +74,20 @@ while ($data=mysqli_fetch_assoc($run)) {
                                     ?><a href="../study_material/pdf/<?php echo $course['upload_pdf']; ?>" class="btn btn-sm btn-success">Pdf Download</a>
                                     <?php } ?>
                            </td>
-                            <td><a href="<?php echo $course['video']; ?>"><?php echo $course['video']; ?></a></td>
+                            <td>
+                            <?php
+                              if(!empty($course['video'])){
+                                ?>
+                                  <video width="320" height="240" controls>
+                                     <source src="../study_material/video/<?php echo $course['video']; ?>" type="video/mp4">
+                                   </video>
+                                <?php
+                              }
+                              else{
+                                ?><h6>Comming Soon...</h6><?php
+                              }
+                            ?>
+                            </td>
                           <!-- <td><?php echo $course['mobile']; ?></td>
                           <td><?php echo $course['email']; ?></td> -->
                           
