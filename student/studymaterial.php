@@ -78,7 +78,7 @@ while ($data=mysqli_fetch_assoc($run)) {
                             <?php
                               if(!empty($course['video'])){
                                 ?>
-                                  <video width="320" height="240" controls>
+                                  <video width="320" height="240" controls id="videoElementID" controlsList="nodownload">
                                      <source src="../study_material/video/<?php echo $course['video']; ?>" type="video/mp4">
                                    </video>
                                 <?php
@@ -169,7 +169,9 @@ while ($data=mysqli_fetch_assoc($run)) {
 </body>
 <?php include 'footer-links.php'; ?>
 <script type="text/javascript">
-   
+   $(document).ready(function(){
+   $('#videoElementID').bind('contextmenu',function() { return false; });
+});
 
     $('.updt').click(function(e){
     var id = $(this).data('id');
