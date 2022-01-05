@@ -127,7 +127,7 @@ session_start();
                             <?php
                               if(!empty($materials['video'])){
                                 ?>
-                                  <video width="320" height="240" controls id="videoElementID">
+                                  <video width="320" height="240" controls id="videoElementID" controlsList="nodownload">
                                      <source src="../study_material/video/<?php echo $materials['video']; ?>" type="video/mp4">
                                    </video>
                                 <?php
