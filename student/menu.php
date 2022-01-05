@@ -4,6 +4,18 @@ error_reporting(0);
   $cpage = explode('.',$cp); 
   $pg=$cpage[0];
 ?>
+<script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF;">
 	<div class="container">
 		<a class="navbar-brand" href="index.php"><img src="/../images/logo/logo.jpeg" height="50" width="70" alt="logo"></a>
