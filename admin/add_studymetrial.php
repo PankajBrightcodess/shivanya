@@ -127,7 +127,7 @@ session_start();
                             <?php
                               if(!empty($materials['video'])){
                                 ?>
-                                  <video width="320" height="240" controls>
+                                  <video width="320" height="240" controls id="videoElementID">
                                      <source src="../study_material/video/<?php echo $materials['video']; ?>" type="video/mp4">
                                    </video>
                                 <?php
@@ -158,7 +158,11 @@ session_start();
 <!-- --------------------------------------------Modal End------------------------------------------- -->
 </body>
 <?php include '../admin/footer-links.php'; ?>
+
 <script type="text/javascript">
+  $(document).ready(function(){
+   $('#videoElementID').bind('contextmenu',function() { return false; });
+});
    
 
     $('.updt').click(function(e){
