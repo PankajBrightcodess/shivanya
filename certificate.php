@@ -58,11 +58,7 @@
                         </div> 
                   </div>
                    <div class="row my-img">
-                        <div class="col-md-4 my-img mb-3">
-                            <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
-                              <img src="images/certificate/cer06.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
-                            </a>  
-                        </div> 
+                        
                         <div class="col-md-4 my-img mb-3">
                             <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
                               <img src="images/certificate/cer11.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
@@ -71,6 +67,11 @@
                         <div class="col-md-4 my-img mb-3">
                             <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
                               <img src="images/certificate/cer12.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
+                            </a>  
+                        </div> 
+                        <div class="col-md-4 my-img mb-3">
+                            <a href="#" id="link1" >  <!-- data-toggle="modal" data-target="#myModal" -->
+                              <img src="images/certificate/cer06.jpeg" id="img4" class="img-responsive showimg avoid-click" width="100%">
                             </a>  
                         </div> 
                   </div>

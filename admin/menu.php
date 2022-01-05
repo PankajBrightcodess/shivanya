@@ -47,6 +47,9 @@ error_reporting(0);
             <a class="dropdown-item" href="student_enquiry.php">New Admission Enquiry List</a>
           </div>
          </li>
+        <!-- <li class="nav-item">
+					<a class="nav-link <?php if($pg=="add_notice"){ echo "active";} ?>" href="add_notice.php">Add Notice </a>
+				</li> -->
 			 <!-- <li class="nav-item">
 					<a class="nav-link <?php if($pg=="new_center_request"){ echo "active";} ?>" href=""></a>
 				</li> -->

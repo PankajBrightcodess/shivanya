@@ -81,6 +81,25 @@ $msg = "";
 
     </div>
 </section>
+  <!-- <section class="notice-news">
+      <hr style="border:1px solid#61300B;width: 14%;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="notice">
+              <h4>Notice Borad</h4>
+              <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3" style="overflow: hidden; max-height:75%!important; z-index: 99;">
+                <?php $i=0; foreach ($notice as $notices) { ++$i; ?>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;<a target="_blank" href="<?php echo "admin/uploads/".$notices['doc']; ?>"><?php echo $notices['notice']; ?></a></p>
+                <?php } ?>
+              </marquee>
+            </div>
+          </div>
+         
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </section> -->
 <section class="intro">
 	<div class="container-fluid">
     	<div class="row">

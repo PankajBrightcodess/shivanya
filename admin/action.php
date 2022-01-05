@@ -719,5 +719,10 @@ if(isset($_POST['update_student'])){
 			}
 	}
 
+	if(isset($_POST['add_notice'])){
+		echo '<pre>';
+		print_r($_POST);die;
+	}
+
 
 ?>
