@@ -73,6 +73,7 @@ $msg = "";
                     <a href="student/" class="btn btn-warning blink"><strong>Student Login</strong></a>
                     <a href="centerlist.php" class="btn btn-warning blink"><strong>Centre List</strong></a>
                     <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink"><strong>Apply For New Centre Franchise</strong></a>
+                     <a href="https://play.google.com/store/apps/details?id=com.bss.shivanya" class="btn btn-warning blink"><strong>Download Our App</strong></a>
                     <!-- <a href="results.php" class="btn btn-warning blink"><strong>Results</strong></a> -->
                     
                 </h2>
@@ -118,7 +119,7 @@ $msg = "";
 
         	<div class="col-md-6 col-lg-4">
             	<h1>THE SHIVANYA COMPUTER EDUCATION</h1>
-                <p>Shivanya Computer Education Private Limited to offer quality education which will ultimately lead the young minds to a successful career. We do not limit ourselves only to classroom teaching but we think beyond it. Quality education is possible only through quality teachers who come out from quality institution in order to achieve target of quality teacher education, it is great pleasure to announce that our institution would do its best for the upliftment of the society through quality education and development of skills.</span></p>
+                <p><span>Shivanya Computer Education Private Limited to offer quality education which will ultimately lead the young minds to a successful career. We do not limit ourselves only to classroom teaching but we think beyond it. Quality education is possible only through quality teachers who come out from quality institution in order to achieve target of quality teacher education, it is great pleasure to announce that our institution would do its best for the upliftment of the society through quality education and development of skills.</span></p>
                 <p class="text-center"><a href="#" class="btn btn-warning">Read More</a></p>
             </div>
             <div class="col-md-12 col-lg-4">
