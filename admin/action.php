@@ -394,8 +394,10 @@ if(isset($_POST['del_result_admin'])){
 		// '''''''''''''''''''''''''''''
 		if($check===true || $check1==true){
 			$image = $image.".jpg";		
-			$image1 = $image1.".jpg";		
-		$query="INSERT INTO `admission_enquiry`(`name`,`mobile`,`email`,`academic_qualification`,`course`,`training_mode`,`added_on`,`educational_doc`,`aadhar`) VALUES ('$name','$mobile','$email','$ac_qualify','$course','$mode','added_on','$image1','$image')";
+			$image1 = $image1.".jpg";	
+			// print_r($image);
+			// print_r($image1);die;
+		$query="INSERT INTO `admission_enquiry`(`name`,`mobile`,`email`,`academic_qualification`,`course`,`training_mode`,`added_on`,`educational_doc`,`aadhar`) VALUES ('$name','$mobile','$email','$ac_qualify','$course','$mode','$added_on','$image1','$image')";
 			$sql=mysqli_query($conn,$query);
 			if($sql){
 				 header("Location:$_SERVER[HTTP_REFERER]");

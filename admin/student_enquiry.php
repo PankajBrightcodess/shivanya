@@ -52,7 +52,9 @@ session_start();
                             <th>Academic Qualification</th>
                             <th>Course</th>
                             <th>Mode</th>
-                            <!-- <th>date</th> -->
+                            <th>date</th>
+                            <td>Educational Document</td>
+                            <td>Aadhar</td>
                             <th>Action</th>
                           </tr>
                         </thead>
@@ -66,7 +68,9 @@ session_start();
                             <td><?php echo $franchise['academic_qualification']; ?></td>
                             <td><?php echo $franchise['course']; ?></td>
                             <td><?php echo $franchise['training_mode']; ?></td>
-                            <!-- <td><?php echo $franchise['added_on']; ?></td> -->
+                            <td><?php echo date('d-m-Y',strtotime($franchise['added_on'])); ?></td> 
+                            <td><img src="../upload/education_document/<?php echo $franchise['educational_doc'];?>" height="100" width="100" class="img-fluid"></td>
+                            <td><img src="../upload/aadhar/<?php echo $franchise['aadhar'];?>" height="100" width="100" class="img-fluid"></td>
                             <td>
                                 <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $franchise['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a>
                             </td>
