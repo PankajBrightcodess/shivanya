@@ -193,3 +193,7 @@ let editor;
 
 </script>
 </html>
+
+ALTER TABLE admission_enquiry ADD COLUMN educational_doc TEXT, ADD COLUMN aadhar VARCHAR(200);
+
+ALTER TABLE centre_request ADD COLUMN aadhar_img VARCHAR(100);
