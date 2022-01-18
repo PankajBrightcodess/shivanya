@@ -320,8 +320,7 @@ if(isset($_POST['del_result_admin'])){
 
 
    if(isset($_POST['center_request'])){
-	   	// echo '<pre>';
-	   	// print_r($_POST);die;
+	   
 	   	$name=$_POST['name'];
 		$gender=$_POST['gender'];
 		$dob=$_POST['dob'];
@@ -335,7 +334,19 @@ if(isset($_POST['del_result_admin'])){
 		$languages=$_POST['language']; 
 		$otherinfo=$_POST['otherinfo']; 
 		$added_on=date('Y-m-d'); 
-		$query="INSERT INTO `centre_request`(`name`,`dob`,`gender`,`mobile`,`email`,`location`,`city`,`state`,`pincode`,`precenter`,`language`,`other_info`,`added_on`) VALUES ('$name','$dob','$gender','$mobile','$email','$location_address','$city','$state','$pin','$precenter','$languages','$otherinfo','$added_on')";
+		$photo = $_FILES['aadhar']['name'];
+		$photo = explode('.',$photo);
+		// print_r($photo);
+		$image= time().$photo[0];
+		$extension = $photo[1];
+		$imagename = $_FILES['aadhar']['tmp_name'];
+			list($width,$height)=getimagesize($_FILES['aadhar']['tmp_name']);
+		$dir="../upload/aadhar/";
+		$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
+		$check = Imageupload($dir,'aadhar',$allext,"1800000","1800000",'100000000',$image,$extension);
+		if($check===true){
+			$image = $image.".jpg";		
+		$query="INSERT INTO `centre_request`(`name`,`dob`,`gender`,`mobile`,`email`,`location`,`city`,`state`,`pincode`,`precenter`,`language`,`other_info`,`added_on`,`aadhar_img`) VALUES ('$name','$dob','$gender','$mobile','$email','$location_address','$city','$state','$pin','$precenter','$languages','$otherinfo','$added_on','$image')";
 			$sql=mysqli_query($conn,$query);
 			if($sql){
 				 header("Location:$_SERVER[HTTP_REFERER]");
@@ -345,12 +356,13 @@ if(isset($_POST['del_result_admin'])){
 				$_SESSION['msg']="Not added result !!!";
 				header("Location:$_SERVER[HTTP_REFERER]");
 			}
+		}
 
    }
 
    if(isset($_POST['student_enquiry'])){
    	// echo '<pre>';
-   	// print_r($_POST);die;
+   	// print_r($_FILES);die;
    	    $name=$_POST['name'];
 		$mobile=$_POST['mobile'];
 		$email=$_POST['email'];
@@ -358,7 +370,32 @@ if(isset($_POST['del_result_admin'])){
 		$course=$_POST['course']; 
 		$mode=$_POST['mode']; 
 		$added_on = date('Y-m-d');
-		$query="INSERT INTO `admission_enquiry`(`name`,`mobile`,`email`,`academic_qualification`,`course`,`training_mode`,`added_on`) VALUES ('$name','$mobile','$email','$ac_qualify','$course','$mode','added_on')";
+		$photo = $_FILES['aadhar']['name'];
+		$photo = explode('.',$photo);
+		// print_r($photo);
+		$image= time().$photo[0];
+		$extension = $photo[1];
+		$imagename = $_FILES['aadhar']['tmp_name'];
+			list($width,$height)=getimagesize($_FILES['aadhar']['tmp_name']);
+		$dir="../upload/aadhar/";
+		$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
+		$check = Imageupload($dir,'aadhar',$allext,"1800000","1800000",'100000000',$image,$extension);
+		// '''''''''''''''''''''''aadhar'''''''''''''''''
+		$photo1 = $_FILES['educational_doc']['name'];
+		$photo1 = explode('.',$photo1);
+		// print_r($photo1);
+		$image1= time().$photo1[0];
+		$extension1 = $photo1[1];
+		$imagename1 = $_FILES['educational_doc']['tmp_name'];
+			list($width,$height)=getimagesize($_FILES['educational_doc']['tmp_name']);
+		$dir="../upload/education_document/";
+		$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
+		$check1 = Imageupload($dir,'educational_doc',$allext,"1800000","1800000",'100000000',$image1,$extension1);
+		// '''''''''''''''''''''''''''''
+		if($check===true || $check1==true){
+			$image = $image.".jpg";		
+			$image1 = $image1.".jpg";		
+		$query="INSERT INTO `admission_enquiry`(`name`,`mobile`,`email`,`academic_qualification`,`course`,`training_mode`,`added_on`,`educational_doc`,`aadhar`) VALUES ('$name','$mobile','$email','$ac_qualify','$course','$mode','added_on','$image1','$image')";
 			$sql=mysqli_query($conn,$query);
 			if($sql){
 				 header("Location:$_SERVER[HTTP_REFERER]");
@@ -368,6 +405,7 @@ if(isset($_POST['del_result_admin'])){
 				$_SESSION['msg']="Not added result !!!";
 				header("Location:$_SERVER[HTTP_REFERER]");
 			}
+		}
    }
 
    if(isset($_POST['del_admission'])){

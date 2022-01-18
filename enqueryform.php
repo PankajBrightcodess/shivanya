@@ -26,7 +26,7 @@ session_start();
    
 <section class="pages">
     <div class="container">
-        <form method="post" action="admin/action.php">
+        <form method="post" action="admin/action.php" enctype="multipart/form-data">
        <div class="row enqueryform">
         <div class="col-lg-12 col-12 mb-3">
             <h2>Student Admission Enquiry Form</h2>
@@ -47,7 +47,7 @@ session_start();
             <label>Academic Qualification<span style="color: Red;">*</span></label>
             <input type="text" name="ac_qualify" placeholder="Enter Academic Qualification" class="form-control" required>
         </div>
-        <div class="col-md-6 col-12  mb-5">
+        <div class="col-md-6 col-12  mb-2">
             <label>Course<span style="color: Red;">*</span></label>
             <select class="form-control" name="course">
                 <option>---SELECT---</option>
@@ -77,7 +77,7 @@ session_start();
                 <option value="CBP">Certificate in Basic Programming</option>
             </select>
         </div>
-         <div class="col-md-6 col-12 mb-5">
+         <div class="col-md-6 col-12 mb-2">
             <label>Training Mode<span style="color: Red;">*</span></label>
             <select class="form-control" name="mode">
                 <option>---SELECT---</option>
@@ -86,6 +86,15 @@ session_start();
                 <option value="correspondence">Correspondence</option>
             </select>
         </div>
+        <div class="col-md-6 col-12 mb-5">
+            <label>Educational Qualification Document<span style="color: Red;">*</span></label>
+            <input type="file" name="educational_doc" class="form-control">
+        </div>
+        <div class="col-md-6 col-12 mb-5">
+            <label>Aadhar<span style="color: Red;">*</span></label>
+            <input type="file" name="aadhar" class="form-control">
+        </div>
+
         <div class="col-md-4 col-4"></div>
         <div class="col-md-4 col-4"><input type="submit" name="student_enquiry" class="btn btn-sm btn-success form-control" value="Submit"></div>
         <div class="col-md-4 col-4"></div>

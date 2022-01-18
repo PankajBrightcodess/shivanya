@@ -169,7 +169,6 @@ function random_number($l){
     }  
 
     </script>
-  </body>
-</html>
+  
 
 

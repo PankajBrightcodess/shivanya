@@ -26,7 +26,7 @@ session_start();
    
 <section class="pages">
     <div class="container">
-        <form method="post" action="admin/action.php">
+        <form method="post" action="admin/action.php" enctype="multipart/form-data">
        <div class="row enqueryform">
         <div class="col-lg-12 col-12 mb-3">
             <h2>New Centre Franchise Form</h2>
@@ -96,6 +96,10 @@ session_start();
         <div class="col-md-6 col-12 mb-5">
             <label>Amount.</label>
             <input type="number" name="amount" placeholder="Enter Amount" class="form-control">
+        </div>
+        <div class="col-md-6 col-12 mb-5">
+            <label>Upload Aadhar.</label>
+            <input type="file" name="aadhar" placeholder="Upload Aadhar" class="form-control">
         </div>
         <div class="col-md-4 col-4"></div>
         <div class="col-md-4 col-4"><input type="submit" name="center_request" class="btn btn-sm btn-success form-control" value="Submit"></div>

@@ -59,6 +59,7 @@ session_start();
                             <th>Language</th>
                             <th>Other Information</th>
                             <th>Request date</th>
+                            <th>Upload Aadhar</th>
                             <th>Action</th>
                           </tr>
                         </thead>
@@ -79,6 +80,7 @@ session_start();
                             <td><?php echo $franchise['language']; ?></td>
                             <td><?php echo $franchise['other_info']; ?></td>
                             <td><?php echo $franchise['added_on']; ?></td>
+                            <td><img src="../upload/aadhar/<?php echo $franchise['aadhar_img']?>" height="100" width="100"></td>
                             <td>
                                 <a class=" btn btn-sm btn-danger delete" data-id="<?php echo $franchise['id'] ?>"><i class="fa fa-trash-alt btn btn-sm btn-danger"></i></a>
                             </td>
