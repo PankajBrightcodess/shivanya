@@ -5,7 +5,8 @@ include 'admin/connection.php';
 // '''''''''''''''''''''''''''''''''''''''
 
    if(isset($_POST['SendMessage'])){
-   	
+   	echo '<pre>';
+   	print_r($_COOKIE['EmailId']);die;
 	    $to="support@shivanyacomputer.com";  
 	    $name = $_POST['name'];
 	    $mobile = $_POST['contact'];
