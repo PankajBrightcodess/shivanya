@@ -50,6 +50,15 @@
                       <li class="nav-item <?php if($page=="certificate"){ echo 'active';} ?>"><a class="nav-link" href="certificate.php?page=certificate">Certificate</a></li>
                       <!-- contact-us.php?page=contact-us -->
                       <li class="nav-item <?php if($page=="contact-us"){ echo 'active';} ?>"><a class="nav-link" href="contact-us.php?page=contact-us">Contact Us</a></li>
+                      
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="" id="AboutVEWT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prospectus</a>
+                          <div class="dropdown-menu" aria-labelledby="AboutVEWT">
+                             <a class="dropdown-item" href="center_certificate.php">Sample Center Certificate</a>
+                            <a class="dropdown-item" href="student_certificate.php">Sample Student Certificate</a>
+                            <a class="dropdown-item" href="student_marksheet.php">Sample Student Marksheet</a>
+                          </div>
+                      </li>
                       <li class="nav-item"><h4><a href="enqueryform.php" class="btn btn-warning blink"><strong>Admission Now</strong></a></h4></li>
                        &nbsp;<li class="nav-item"><h4><a href="results.php" class="btn btn-warning blink"><strong>Results</strong></a></h4></li>
                     </ul>
