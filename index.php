@@ -54,16 +54,7 @@ $msg = "";
     <script type="text/javascript" src="engine1/script.js"></script>
     <!-- End Slider BODY section -->
 </section>
-<section class="news-scroll" >
-    <div class="container">
-        <div class="row">
-            <div class="col-6 col-sm-6 col-md-6 col-lg-4 pr-0"><h4>New Batch Start From  :</h4></div>
-            <div class="col-5 col-sm-5 col-md-5  col-lg-4 pl-0"><marquee behavior="scroll" direction="left" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">1st january 2022 , Online Classes is also Available</marquee></div>
 
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mob-btn"><a href="pay.php" class="btn btn-success">Pay Now</a></div>
-        </div>
-    </div>
-</section>
 <section class="banner-bottom" >
 	<div class="container-fluid">
         <div class="row">
@@ -80,6 +71,16 @@ $msg = "";
             </div>
         </div>
 
+    </div>
+</section>
+<section class="news-scroll" >
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 pr-0"><h4>New Batch Start From  :</h4></div>
+            <div class="col-5 col-sm-5 col-md-5  col-lg-4 pl-0"><marquee behavior="scroll" direction="left" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">1st january 2022 , Online Classes is also Available</marquee></div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mob-btn"><a href="pay.php" class="btn btn-success">Pay Now</a></div>
+        </div>
     </div>
 </section>
   <!-- <section class="notice-news">
