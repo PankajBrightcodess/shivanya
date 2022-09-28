@@ -113,14 +113,14 @@ session_start();
                           <td>
                             <?php
                             if($_SESSION['role']=='1' && $materials['upload_image']!=''){
-                                    ?><a href="../study_material/image/<?php echo $materials['upload_image']; ?>" class="btn btn-sm btn-warning">Image Download</a></td><?php
+                                    ?><a href="../study_material/image/<?php echo $materials['upload_image']; ?>" target="_blank" class="btn btn-sm btn-warning">Image Download</a></td><?php
                              }
                             ?>
                           </td>
                           <td>
                             <?php
                             if($_SESSION['role']=='1' && $materials['upload_pdf']!=''){
-                                    ?><a href="../study_material/pdf/<?php echo $materials['upload_pdf']; ?>" class="btn btn-sm btn-success">Pdf Download</a></td><?php
+                                    ?><a href="../study_material/pdf/<?php echo $materials['upload_pdf']; ?>" class="btn btn-sm btn-success" target="_blank">Pdf Download</a></td><?php
                              }
                             ?></td>
                           <td>
