@@ -361,8 +361,8 @@ if(isset($_POST['del_result_admin'])){
    }
 
    if(isset($_POST['student_enquiry'])){
-   	// echo '<pre>';
-   	// print_r($_FILES);die;
+    	// echo '<pre>';
+    	// print_r($_FILES);die;
    	    $name=$_POST['name'];
 		$mobile=$_POST['mobile'];
 		$email=$_POST['email'];
@@ -524,10 +524,10 @@ if(isset($_POST['del_result_admin'])){
 		$_SESSION['msg']="Records Added Successfully !!!";
 		$_SESSION['last_inst_id']=$conn->insert_id; 
 		// print_r($_SESSION['last_inst_id']);die;
-       header('location:../payment.php');
+        header('location:payment.php');
 	 } else {
 		$_SESSION['msg']="Records Not Added !!!";
-       header('header:registrationform.php');
+       // header('header:registrationform.php');
 	 }
    		
   }
@@ -555,21 +555,21 @@ if(isset($_POST['del_result_admin'])){
    if(isset($_POST['material_upload'])){
      	$course=$_POST['course'];
 		$topic_name=$_POST['topic_name'];
-		
-		
 		$added_on=date('Y-m-d');
 		// ---------------image upload-----------------
 		if($_FILES['upload_image']['name']!=''){
 			$photo = $_FILES['upload_image']['name'];
 			$photo = explode('.',$photo);
 			// print_r($photo);
-			$image= time().$photo[0];
+			$image= time().date('ymd').'image';
+			// print_r($image);
 			$imagename = $_FILES['upload_image']['tmp_name'];
 			list($width,$height)=getimagesize($_FILES['upload_image']['tmp_name']);
 			$dir="../study_material/image/";
 			$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
 			$check = Imageupload($dir,'upload_image',$allext,"1800000","1800000",'100000000',$image);
 			$image = $image.".jpg";	
+
 		}else{
 			$_FILES['upload_image']['name']='';
 		}
@@ -577,7 +577,8 @@ if(isset($_POST['del_result_admin'])){
 			$pdfs = $_FILES['upload_pdf']['name'];
 			$pdfs = explode('.',$pdfs);
 			// print_r($pdfs);
-			$pdf= time().$pdfs[0];
+			$pdf= time().date('dmy').'pdf';
+			
 			$pdfname = $_FILES['upload_pdf']['tmp_name'];
 			list($width,$height)=getimagesize($_FILES['upload_pdf']['tmp_name']);
 			$dir="../study_material/pdf/";
@@ -588,15 +589,13 @@ if(isset($_POST['del_result_admin'])){
 		}
 		else{
 			$_FILES['upload_image']['name']='';
-
 		}
-
 		if($_FILES['video_link']['name']!=''){
 			// print_r($_FILES['video_link']['name']);die;
 			$videos = $_FILES['video_link']['name'];
 			$videos = explode('.',$videos);
 			// print_r($videos);
-			$video= time().$videos[0];
+			$video= time().date('mdy').'videos';
 			$videoname = $_FILES['video_link']['tmp_name'];
 			list($width,$height)=getimagesize($_FILES['video_link']['tmp_name']);
 			$dir="../study_material/video/";
@@ -612,7 +611,7 @@ if(isset($_POST['del_result_admin'])){
 		
 		// ---------------------pdf upload--------------------	
 		
-			// print_r($check);die;
+		
 		if($check===true || $check1===true){
 			
 			$query="INSERT INTO `material_upload`(`course`,`topic_name`,`upload_image`,`upload_pdf`,`video`,`added_on`) VALUES ('$course','$topic_name','$image','$pdf','$video_link','$added_on')";
