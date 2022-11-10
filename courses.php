@@ -92,6 +92,11 @@
                         <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal14">Certificate in Computer Course (CCC)</a></li>       
                     </ul>
                 </div>
+                <div class="col-lg-6 mb-3">
+                    <ul>
+                        <li><i class="fas fa-hand-point-right fa-lg"></i> &nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#exampleModal222">Diploma in Computer Hardware & Networking (DCHN)</a></li>       
+                    </ul>
+                </div>
                 <div class="col-md-12">
                     <h5>3 Months Courses</h5>
                 </div>
@@ -596,6 +601,35 @@
             </div>
           </div>
     </div>
+
+ <!-- ''''''''''''''''''''''''''''''''''''''''''''''''''''''''Model 222'''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+    <div class="modal fade" id="exampleModal222" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Diploma in Computer Hardware & Networking (DCHN)</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 col-6"><span><strong>Eligibility - 10th</strong></span></div>
+                    <div class="col-md-6 col-6 mb-3"><span><strong>Duration - 6 Months</strong></span></div>
+                </div>
+                <div class="row part">
+                    <div class="col-md-12 col-12 mb-2">
+                        <ul>
+                            <li>Diploma in Computer Hardware & Networking</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
     <!-- ''''''''''''''''''''''''''''''''''''''''''''''''''''''''Model 15'''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
     <div class="modal fade" id="exampleModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
