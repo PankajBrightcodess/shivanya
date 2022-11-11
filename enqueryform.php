@@ -54,7 +54,7 @@ session_start();
                 <option value="DNITC">Diploma in Nursery teacher training Course (DNITC)</option>
                 <option value="DCITC">Diploma in Computer Teacher Training Course (DCITC)</option>
                 <option value="PG-DCC">PG-Diploma in Computer Course (PG-DCC)</option>
-                <option value="MDCC">Marter Diploma in Computer Course (MDCC)</option>
+                <option value="MDCC">Master Diploma in Computer Course (MDCC)</option>
                 <option value="ADCPC">Advance Diploma in Computer Programming Course (ADCPC)</option>
                 <option value="DCOMPC">Diploma in Computer Office Management & Publishing Course (DCOMPC)</option>
                 <option value="ADCC">Advance Diploma in Computer Course (ADCC)</option>
@@ -74,7 +74,7 @@ session_start();
                 <option value="CESPD">Certificate in English Speaking & PD</option>
                 <option value="CDTP">Certificate in DTP</option>
                 <option value="CT">Certificate in Tally</option>
-                <option value="CBP">Certificate in Basic Programming</option>
+                <option value="DCHN">Diploma in Computer Hardware & Networking (DCHN)</option>
             </select>
         </div>
          <div class="col-md-6 col-12 mb-2">

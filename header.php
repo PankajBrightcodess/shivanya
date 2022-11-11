@@ -46,6 +46,7 @@
                       <!-- facility.php?page=facility -->
                      <li class="nav-item <?php if($page=="facility"){ echo 'active';} ?>"><a class="nav-link" href="facility.php?page=facility">Facilities</a></li>
                          <li class="nav-item <?php if($page=="faculty"){ echo 'active';} ?>"><a class="nav-link" href="faculty.php?page=faculty">Faculty</a></li>
+                         <li class="nav-item <?php if($page=="gallery2"){ echo 'active';} ?>"><a class="nav-link" href="gallery2.php?page=gallery2">Important Notice</a></li>
                      <!-- gallery.php?page=gallery -->
                       <li class="nav-item <?php if($page=="certificate"){ echo 'active';} ?>"><a class="nav-link" href="certificate.php?page=certificate">Certificate</a></li>
                       <!-- contact-us.php?page=contact-us -->
