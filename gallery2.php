@@ -12,7 +12,7 @@
 
     <section class="pages">
         <div class="container imghov">
-          <h2><center>Gallery</center></h2>
+          <h2><center>Important Notice</center></h2>
             <div class="row">
                
             <div class="col-lg-3 my-3 ">
