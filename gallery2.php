@@ -54,6 +54,32 @@
           </div>
           <div class="clearfix"></div>
         </div><hr>
+
+
+        <div class="row">
+               
+            <div class="col-lg-3 my-3 ">
+            <img src="images/img1.jpeg" alt="ref.jpg" class="w-100 h-100 img-thumbnail my-1"  >
+            
+          </div>
+          <div class="col-lg-3 my-3">
+             <img src="images/img2.jpeg" alt="wash.jpg" class="w-100 h-100 img-thumbnail my-1">
+            
+          </div>
+          <div class="col-lg-3 my-3">
+            <img src="images/img3.jpeg" alt="ac.jpg" class="w-100 h-100 img-thumbnail my-1">
+            
+          </div>
+          <div class="col-lg-3 my-3">
+             <img src="images/img4.jpeg" alt="wat.jpg" class="w-100 h-100 img-thumbnail my-1">
+          
+          </div>
+          <div class="col-lg-3 my-3">
+             <img src="images/img5.jpeg" alt="wat.jpg" class="w-100 h-100 img-thumbnail my-1">
+          
+          </div>
+          <div class="clearfix"></div>
+        </div><hr>
                 </div>
             </div>
             <div class="row">
