@@ -13,7 +13,7 @@
     <section class="pages">
         <div class="container imghov">
           <h2><center>Important Notice</center></h2>
-            <div class="row">
+            <!-- <div class="row">
                
             <div class="col-lg-3 my-3 ">
             <img src="images/1.jpg" alt="ref.jpg" class="w-100 h-100 img-thumbnail my-1"  >
@@ -32,9 +32,9 @@
           
           </div>
           <div class="clearfix"></div>
-        </div><hr>
+        </div><hr> -->
 
-<div class="row">
+<!-- <div class="row">
                
             <div class="col-lg-3 my-3 ">
             <img src="images/5.jpg" alt="ref.jpg" class="w-100 h-100 img-thumbnail my-1"  >
@@ -53,7 +53,7 @@
           
           </div>
           <div class="clearfix"></div>
-        </div><hr>
+        </div><hr> -->
 
 
         <div class="row">

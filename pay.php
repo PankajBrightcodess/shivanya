@@ -40,6 +40,7 @@
                 <label style="color:white">Course<span style="color: Red;">*</span></label>
                 <select class="form-control" name="course">
                     <option value="0">---SELECT---</option>
+                    <option value="DCHN">Diploma in Computer Hardware & Networking (DCHN)</option>
                     <option value="DNITC">Diploma in Nursery teacher training Course (DNITC)</option>
                     <option value="DCITC">Diploma in Computer Teacher Training Course (DCITC)</option>
                     <option value="PG-DCC">PG-Diploma in Computer Course (PG-DCC)</option>
@@ -64,6 +65,7 @@
                     <option value="CDTP">Certificate in DTP</option>
                     <option value="CT">Certificate in Tally</option>
                     <option value="CBP">Certificate in Basic Programming</option>
+
                 </select>
             </div>
              <div class="col-md-6 mb-3 institute">
